@@ -29,6 +29,25 @@
           width: 95px;
           height: 95px;
       }
+      .nav-item > a {
+          color: black;
+          border-right: lightgray solid 1px;
+          padding: .3rem;
+        padding-right: 20px !important;
+        padding-left: 20px !important;
+      }
+      .nav-item >a:hover,
+      .subnav > .nav-item > a:hover
+       {
+          color: red;
+      }
+      .subnav > .nav-item > a {
+        border-right: none !important;
+        color: grey;
+      }
+      .search-input {
+          width: 60px;
+      }
       p {
           font-family: Arial;
           font-size: 13px;
@@ -66,7 +85,9 @@
           padding-left: 15px;
           padding-right: 15px;
       }
-
+      .newslogo {
+          filter: brightness(999);
+      }
       @media screen and (min-width: 768px) {
         .suscribe-body {
         margin-top: 5rem !important;
@@ -74,14 +95,16 @@
   </style>
   
   <body>
-      <div class="container-fluid p-0">
+      <div class="container-xl p-0">
       <!-- navbar -->
     <header id="header">
-        <nav class="navbar bg-orange navbar-expand-lg align-items-center justify-content-between p-0 text-white">
+ <nav class="navbar bg-orange navbar-expand-lg align-items-center justify-content-between p-0 text-white">
+            <i class="d-none d-lg-inline fas fa-cloud-sun-rain m-1"><p class="span d-inline">24 BUENOS AIRES, AR></p><span class="span d-block m-1">Tue, Nov 17, 2020</span></i>
             <a href="#" class="navbar-brand">
-                <img src="img/NW-logo1.png" width="155px" alt="">
+                <img class="d-lg-none" src="img/NW-logo1.png" width="155px" alt="">
+                <img class="d-none d-lg-inline newslogo align-items-center position-relative " src="img/newsweek.png" width="420px" alt="">
             </a>
-            <div class="right-side">
+            <div class="right-side align-self-end">
             <a href="" class="btn d-md-none"><i class="fas fas fa-user  bg-orange  text-lightgrey"></i></a>
             <a href="#" class="d-none d-md-inline h5 text-white font-weight-bold pr-3">LOG IN</a>
             <button type="button" class="d-md-none btn btn-yellow rounded-pill font-weight-bold py-0">SUSCRIBE <span class="text-muted">></span></button>
@@ -98,53 +121,74 @@
         </div>
         </nav>
         <!-- 2nd navbar (lg) -->
-        <nav class="navbar navbar-expand d-none d-lg-flex justify-content-between">
-            <ul class="navbar-nav text-capitalize">
-                <li class="nav-item active">
+        <nav class="navbar navbar-expand d-none d-lg-flex font-weight-bold text-capitalize border-bottom">
+            <ul class="navbar-nav">
+                <li class="nav-item active ">
                     <a href="#" class="nav-link">U.S.</a>
                 </li>
-            <ul class="navbar-nav text-capitalize">
                 <li class="nav-item active">
                     <a href="#" class="nav-link">world</a>
                 </li>
-            <ul class="navbar-nav text-capitalize">
                 <li class="nav-item active">
                     <a href="#" class="nav-link">bussiness</a>
                 </li>
-            <ul class="navbar-nav text-capitalize">
                 <li class="nav-item active">
                     <a href="#" class="nav-link">tech & science</a>
                 </li>
-            <ul class="navbar-nav text-capitalize">
                 <li class="nav-item active">
                     <a href="#" class="nav-link">culture</a>
                 </li>
-            <ul class="navbar-nav text-capitalize">
                 <li class="nav-item active">
                     <a href="#" class="nav-link">sports</a>
                 </li>
-            <ul class="navbar-nav text-capitalize">
                 <li class="nav-item active">
                     <a href="#" class="nav-link">health</a>
                 </li>
-            <ul class="navbar-nav text-capitalize">
                 <li class="nav-item active">
                     <a href="#" class="nav-link">the debate</a>
                 </li>
-            <ul class="navbar-nav text-capitalize">
                 <li class="nav-item active">
                     <a href="#" class="nav-link">vantage</a>
                 </li>
-            <ul class="navbar-nav text-capitalize">
                 <li class="nav-item active">
                     <a href="#" class="nav-link">weather</a>
                 </li>
+                <input type="text" placeholder="Search" aria-label="small" class="border-0 search-input">
+                <i class="fas fa-search d-inline mt-2"></i> 
             </ul>
         </nav>
     </header>
+    <!-- third navbar -->
+    <nav class="navbar navbar-expand d-none d-lg-flex font-weight-bold text-capitalize border-bottom ">
+        <ul class="navbar-nav subnav">
+            <li class="nav-item active ">
+                <a href="#" class="nav-link text-dark">TRENDING</a>
+            </li>
+            <li class="nav-item active">
+                <a href="#" class="nav-link">JOE BIDEN
+                </a>
+            </li>
+            <li class="nav-item active">
+                <a href="#" class="nav-link">DONALD TRUMP</a>
+            </li>
+            <li class="nav-item active">
+                <a href="#" class="nav-link">2020 ELECTION
+                </a>
+            </li>
+            <li class="nav-item active">
+                <a href="#" class="nav-link">CORONAVIRUS
+                </a>
+            </li>
+            <li class="nav-item active">
+                <a href="#" class="nav-link">STIMULUS PACKAGE</a>
+            </li>
+        </ul>
+    </nav>
 </div>
 <!-- main -->
-        <div class="container-fluid">
+
+<!-- top story -->
+        <div class="container-xl">
             <div class="row mb-3 justify-content-center flex-md-row-reverse row-cols-3">
                 <div class="col-12 col-md-7 col-lg-6">
                     <h4 class="h6 text-secondary mt-3">TOP STORY</h4>
@@ -191,7 +235,7 @@
              </div>
          </div>
         </div>   
-        
+        <!-- culture & travel -->
         <div class="col-12 m-0 p-0 flex-row">
     
             <div class="row card border-0">
@@ -301,12 +345,35 @@
                     <img class="img-fluid mb-2" src="https://d.newsweek.com/en/full/1667461/cronavirus-cdc.jpg" alt="">
                     <h2 class="h5  py-2 font-weight-bold">Moderna COVID Vaccine More Effective Than Pfizer: 'Tremendously Exciting'</h2>
                     <p class="p">Dr. Amesh Adalja of Johns Hopkins University said that public health agencies should be treated like "national security personnel because this is a national security crisis."</p>
-                </div>
+               
+                
+                <div class="card d-none d-lg-inline">
+                    <img class="card-img-top" src="https://d.newsweek.com/en/full/1666606/best-stem-2021.png" alt="">
+                    <div class="card-body">
+                    <h2 class="h5 font-weight-bold card-title">Best in STEM 2021</h2>
+                    <p class="p card-text">Meet the toymakers and brands who are lending a helping hand to science, technology, engineering and math (STEM) education
+                    </p>
+                </div></div>
+                    
+                        <div class="card d-none d-lg-inline">
+                    <img class="card-img-top" src="https://d.newsweek.com/en/full/1648617/americas-best-banks-2021.png" alt="">
+                    <div class="card-body">
+                    <h2 class="h5 font-weight-bold card-title">America's Best Banks 2021</h2>
+                    <p class="p card-text">Introducing Newsweek's first ranking of the financial institutions that best serve their customers' needs in today's challenging times.</p>
+                </div></div>
+                   
+                        <div class="card d-none d-lg-inline">
+                    <img class="card-img-top" src="https://d.newsweek.com/en/full/1641228/worlds-best-specialized-hospitals-2021.png" alt="">
+                    <div class="card-body">
+                    <h2 class="h5 font-weight-bold card-title">World's Best Specialized Hospitals 2021</h2>
+                    <p class="p card-text">In the first part of this special, we rank the best hospitals in cardiology, oncology and endocrinology.</p>
+                </div></div>
+            </div>
 
                 <!-- debate -->
                
                 <div class="col-12 col-lg-3 order-lg-first pl-lg-0 pr-lg-2">
-                <h4 class="h6  text-secondary">THE DEBATE</h4>
+                <h4 class="h6  text-secondary mt-3">THE DEBATE</h4>
                 <hr>
                 <div class="first-debator d-flex flex-row ">
                 <img class="img-fluid mb-2" src="img/will-chamberlain.png" alt="Will Chamberlain" title="Will Chamberlain" width="63" height="63" loading="lazy">
@@ -322,7 +389,7 @@
                     <span class="p small">BY <remark>MATTHEW FEENEY</remark></span>
                     </div>
                 </div>
-          
+          <!-- opinion -->
    
             <div class="col-12 pl-lg-0 pr-lg-1">
                 <h4 class="h6 py-2 text-secondary">OPINION</h4>
@@ -400,7 +467,7 @@
                     <p class="p card-text"> The number of mass shootings in the U.S. have soared in 2020, despite widespread closures of schools, officers and many public places due to the pandemic.</p>
                 </div></div>
                     
-                        <div class="card">
+                        <div class="card d-lg-none">
                     <img class="card-img-top" src="https://d.newsweek.com/en/full/1666606/best-stem-2021.png" alt="">
                     <div class="card-body">
                     <h2 class="h5 font-weight-bold card-title">Best in STEM 2021</h2>
@@ -408,14 +475,14 @@
                     </p>
                 </div></div>
                     
-                        <div class="card">
+                        <div class="card d-lg-none">
                     <img class="card-img-top" src="https://d.newsweek.com/en/full/1648617/americas-best-banks-2021.png" alt="">
                     <div class="card-body">
                     <h2 class="h5 font-weight-bold card-title">America's Best Banks 2021</h2>
                     <p class="p card-text">Introducing Newsweek's first ranking of the financial institutions that best serve their customers' needs in today's challenging times.</p>
                 </div></div>
                    
-                        <div class="card">
+                        <div class="card d-lg-none">
                     <img class="card-img-top" src="https://d.newsweek.com/en/full/1641228/worlds-best-specialized-hospitals-2021.png" alt="">
                     <div class="card-body">
                     <h2 class="h5 font-weight-bold card-title">World's Best Specialized Hospitals 2021</h2>
@@ -434,7 +501,7 @@
             
                 <div class="row mb-3 bg-white d-md-none">
                     <div class="col">
-    <!-- MORE STORIES -->
+    <!-- MORE STORIES (sm) -->
                 <h4 class="h6  text-secondary">MORE STORIES</h4>
 
                 <img class="img-thumbnail float-left border-0" src="img/washington-dc-violene-trump-maga-march-blm.jpg"  alt="">
@@ -483,7 +550,7 @@
             </div></div>
 
 
-               <!-- MY TURN -->
+               <!-- MY TURN (sm) -->
             
                 <div class="col-12 d-md-none">
                         <div class="card border-0">
@@ -524,7 +591,7 @@
                             <h6 class="py-4 card-title text-secondary font-weight-bold">'I Swore to Keep My Infant Away From Screens, But COVID Made That Hopeless'</h6>
                         </div>
                     </div></div>
-
+                    </div>  </div>
        <!-- IN THE MAGAZINE -->
             
                 <div class="row bg-white mx-1">
@@ -593,7 +660,7 @@
                                 </div>
                             </div>
                                 
-                            <div class="col-12 px-2 col-md-6">
+                            <div class="col-12 px-2 col-md-6 col-lg-3">
                                 <hr>
                         <img  class="img-fluid py-2" src="https://d.newsweek.com/en/full/1670998/anthony-fauci-covid-coronavirus-getty.jpg">
                         <h2 class="h5  py-2 font-weight-bold">Black and Latino Groups Eye Georgia Senate Runoffs Needing a Sweep
@@ -601,7 +668,7 @@
                         <p class="p">The balance of power in the Senate—and level of effectiveness of Joe Biden's incoming administration—hangs in the balance with dual Senate runoffs in Georgia, and Black and Latino groups are mobilizing to try to win two seats in an incredibly challenging political environment.</p>
                                 </div>
         
-                                <div class="col-12 px-2 col-md-6">
+                                <div class="col-12 px-2 col-md-6  col-lg-3">
 
                         <hr>
                         <img  class="img-fluid py-2" src="https://d.newsweek.com/en/full/1662335/cul-map-007-banner.jpg">
@@ -610,7 +677,7 @@
                         <p class="p">The balance of power in the Senate—and level of effectiveness of Joe Biden's incoming administration—hangs in the balance with dual Senate runoffs in Georgia, and Black and Latino groups are mobilizing to try to win two seats in an incredibly challenging political environment.</p>
                                 </div>
         
-                                <div class="col-12 px-2 col-md-6">
+                                <div class="col-12 px-2 col-md-6  col-lg-3">
 
                         <hr>
                         <img  class="img-fluid py-2" src="https://d.newsweek.com/en/full/1662335/cul-map-007-banner.jpg">
@@ -619,7 +686,7 @@
                         <p class="p">The balance of power in the Senate—and level of effectiveness of Joe Biden's incoming administration—hangs in the balance with dual Senate runoffs in Georgia, and Black and Latino groups are mobilizing to try to win two seats in an incredibly challenging political environment.</p>
                                 </div>
         
-                                <div class="col-12 px-2 col-md-6">
+                                <div class="col-12 px-2 col-md-6  col-lg-3">
 
                         <hr>
                         <img  class="img-fluid py-2" src="https://d.newsweek.com/en/full/1662335/cul-map-007-banner.jpg">
@@ -628,7 +695,7 @@
                         <p class="p">The balance of power in the Senate—and level of effectiveness of Joe Biden's incoming administration—hangs in the balance with dual Senate runoffs in Georgia, and Black and Latino groups are mobilizing to try to win two seats in an incredibly challenging political environment.</p>
                                 </div>
         
-                                <div class="col-12 px-2 col-md-6">
+                                <div class="col-12 px-2 col-md-6  col-lg-3">
 
                         <hr>
                         <img  class="img-fluid py-2" src="https://d.newsweek.com/en/full/1662335/cul-map-007-banner.jpg">
@@ -637,7 +704,7 @@
                         <p class="p">The balance of power in the Senate—and level of effectiveness of Joe Biden's incoming administration—hangs in the balance with dual Senate runoffs in Georgia, and Black and Latino groups are mobilizing to try to win two seats in an incredibly challenging political environment.</p>
                                 </div>
         
-                                <div class="col-12 px-2 col-md-6">
+                                <div class="col-12 px-2 col-md-6  col-lg-3">
 
                         <hr>
                         <img  class="img-fluid py-2" src="https://d.newsweek.com/en/full/1662335/cul-map-007-banner.jpg">
@@ -646,7 +713,7 @@
                         <p class="p">The balance of power in the Senate—and level of effectiveness of Joe Biden's incoming administration—hangs in the balance with dual Senate runoffs in Georgia, and Black and Latino groups are mobilizing to try to win two seats in an incredibly challenging political environment.</p>
                                 </div>
         
-                                <div class="col-12 px-2 col-md-6">
+                                <div class="col-12 px-2 col-md-6  col-lg-3">
 
                         <hr>
                         <img  class="img-fluid py-2" src="https://d.newsweek.com/en/full/1662335/cul-map-007-banner.jpg">
@@ -655,7 +722,7 @@
                         <p class="p">The balance of power in the Senate—and level of effectiveness of Joe Biden's incoming administration—hangs in the balance with dual Senate runoffs in Georgia, and Black and Latino groups are mobilizing to try to win two seats in an incredibly challenging political environment.</p>
                                 </div>
         
-                                <div class="col-12 px-2 col-md-6">
+                                <div class="col-12 px-2 col-md-6  col-lg-3">
 
                         <hr>
                         <img  class="img-fluid py-2" src="https://d.newsweek.com/en/full/1662335/cul-map-007-banner.jpg">
@@ -667,35 +734,35 @@
                  
                 <!-- SUSCRIBE -->
                 <div class="row bg-white ">
-                    <div class="col-12 p-1">
+                    <div class="col-12 p-1 col-lg-7">
                         <a href="#"><h4 class="text-danger mx-3 font-weight-bold">SUSCRIBE</h4>
                         </a>
                         <div class="col-12 mb-4">
-                        <div class="card bg-lightgrey pt-5 border-0 align-items-center d-md-flex flex-md-row">
-                            <div class="col-md-6"></div>
-                            <img class="card-img-top w-25  position-absolute" src="https://d.newsweek.com/en/full/1658908/cover-november-06-11-2020.jpg">
+                        <div class="card bg-lightgrey border-0 align-items-center d-md-flex flex-md-row">
+                            <div class="col-md-7  "></div>
+                            <img class="card-img-top w-25  position-absolute mh-2" src="https://d.newsweek.com/en/full/1658908/cover-november-06-11-2020.jpg">
                             <img class="card-img-top w-25 ml-5 position-absolute mt-3" src="https://d.newsweek.com/en/full/1668137/cover-november-20-2020.jpg">
-                              <div class="suscribe-body card-body d-flex flex-column align-items-center col-md-6 ">
-                                  <div class="class-title">  <h2 class="h4 mx-5 font-weight-bold text-center ">In-depth Stories You Don't See Elsewhere About Topics You Want to Read!
+                              <div class="suscribe-body card-body d-flex flex-column align-items-center col-md-5 pt-0 mt-0">
+                                  <div class="class-title">  <h2 class="h4 mx-lg-0 font-weight-bold text-center">In-depth Stories You Don't See Elsewhere About Topics You Want to Read!
                                 </h2></div>
-                              <p class="h6 card-text text-center mx-5">All Access + Weekly Delivery.
+                              <p class="h6 card-text text-center mx-lg-0">All Access + Weekly Delivery.
                                 Choose A Membership That's Perfect for You!</p>
                               <a href="#" type="button" class="btn btn-danger text-white font-weight-bold mt-3 p-2 px-3 h5">SUSCRIBE></a></div></div>
                             </div>
                           </div>
-
-                          <div class="col-12 p-1 ">
+<!-- NEWSLETTER -->
+                          <div class="col-12 p-1 col-lg-5 ">
                             <a href="#"><h4 class="text-danger mx-3 font-weight-bold">NEWSLETTER</h4>
                             </a>
                             <div class="col-12 mb-4 d-md-flex">
-                            <div class="card bg-lightgrey border-0 d-md-flex flex-md-row">
-                                <img class="img-fluid d-md-flex flex-md-row w-100 " src="https://d.newsweek.com/en/full/1541302/starting5-homepage.png">
+                            <div class="card bg-lightgrey border-0 d-md-flex flex-md-row col-lg-5 px-0">
+                                <img class="img-fluid d-md-flex flex-md-row  " src="https://d.newsweek.com/en/full/1541302/starting5-homepage.png">
                                   <div class="card-body d-flex flex-column align-items-center">
                                         <div class="class-title">  <h2 class="h4 mx-5 font-weight-bold text-center">THE STARTING 5    </h2></div>
                                   <p class="h6 card-text text-center mx-5">All Access + Weekly Delivery.
                                     Choose A Membership That's Perfect for You!</p>
     
-                                    <form class="form-inline w-100" action="/action_page.php">
+                                    <form class="form-inline w-100 d-lg-flex flex-lg-column" action="/action_page.php">
                                         <input type="email" class="form-control w-50" placeholder="Email address" id="email">
                                         <button type="submit" class="btn btn-danger w-50 text-white font-weight-bold mt-3 p-2 px-3 h5">FREE SIGN UP></a></div></div>
         
@@ -758,6 +825,3 @@
     -->
   </body>
 </html>
-
-<!-- onclick="location.href='index.html';"
- -->
