@@ -66,22 +66,30 @@
           padding-left: 15px;
           padding-right: 15px;
       }
+
+      @media screen and (min-width: 768px) {
+        .suscribe-body {
+        margin-top: 5rem !important;
+      }}
   </style>
   
   <body>
       <div class="container-fluid p-0">
       <!-- navbar -->
     <header id="header">
-        <nav class="navbar bg-orange navbar-expand-lg align-items-center justify-content-between p-0">
+        <nav class="navbar bg-orange navbar-expand-lg align-items-center justify-content-between p-0 text-white">
             <a href="#" class="navbar-brand">
-                <img src="img/NW-logo1.png" width="145px" alt="">
+                <img src="img/NW-logo1.png" width="155px" alt="">
             </a>
             <div class="right-side">
-            <a href="" class="btn"><i class="fas fas fa-user  bg-orange  text-lightgrey"></i></a>
-            <button type="button" class="btn btn-yellow rounded-pill font-weight-bold py-0">SUSCRIBE <span class="text-muted">></span></button>
+            <a href="" class="btn d-md-none"><i class="fas fas fa-user  bg-orange  text-lightgrey"></i></a>
+            <a href="#" class="d-none d-md-inline h5 text-white font-weight-bold pr-3">LOG IN</a>
+            <button type="button" class="d-md-none btn btn-yellow rounded-pill font-weight-bold py-0">SUSCRIBE <span class="text-muted">></span></button>
+            <button type="button" class="d-none d-md-inline btn btn-yellow rounded-pill font-weight-bold h5 py-1">SUSCRIBE <span class="text-muted">></span></button>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
                 <span class="toggler-icon">
-                    <i class="fas fa-bars text-lightgrey"></i>
+                    <i class="d-md-none  fas fa-bars text-lightgrey "></i>
+                    <i class="d-none d-md-inline fas fa-bars text-lightgrey fa-2x"></i>
                 </span>
             </button>
             <div class="collapse navbar-collapse" id="myNavbar">
@@ -137,8 +145,8 @@
 </div>
 <!-- main -->
         <div class="container-fluid">
-            <div class="row mb-3 justify-content-center flex-row-reverse">
-                <div class="col-12 col-md-7">
+            <div class="row mb-3 justify-content-center flex-md-row-reverse row-cols-3">
+                <div class="col-12 col-md-7 col-lg-6">
                     <h4 class="h6 text-secondary mt-3">TOP STORY</h4>
                 <img  class="img-fluid mb-2" src="img/washington-dc-violene-trump-maga-march-blm.jpg">
                 <h2 class="h5 py-2 font-weight-bold">'Trump Just Conceded': Reactions Follow President's 'He Won Because' Tweet</h2>
@@ -148,10 +156,128 @@
                 <img class="img-thumbnail float-left border-0" src="img/washington-dc-violene-trump-maga-march-blm.jpg"  alt="">
                 <h2 class="h5  py-2 font-weight-bold">Trump Says Biden Won, But Only Because the 'Election Was Rigged'</h2>
                 <p class="p">The president has thus far refused to acknowledge his defeat, leaning on baseless conspiracy theories and longshot litigation to dispute the result.</p>
+
+                <!--myturn  -->
+                
+                <div class="col-12 m-0 p-0 flex-row">
+                  
+                        
+                 <div class="row card border-0">
+                     <div class="card-title">
+                         <a href="#"><h6 class="text-secondary font-weight-bold pl-3 mb-0">MY TURN</h6>
+                         </a>
+                     </div> </div>
+                     <div class="row">
+                     <div class="col-12 col-md-4 ">
+                 <img class="card-img-top" src="https://d.newsweek.com/en/full/1669099/screen-time-children.jpg?w=397&amp;h=397&amp;f=fa524cf1e8e3c3e000b34bd9de607b60" alt="Screen Time Children">
+                     <h6 class="py-2 card-title text-secondary font-weight-bold">'I Swore to Keep My Infant Away From Screens, But COVID Made That Hopeless'</h6>
+                 </div>
+            
+             <div class="col-12  col-md-4">
+    
+    
+                 <div class="card border-0">
+                 <img class="card-img-top" src="https://d.newsweek.com/en/full/1670967/plants-interior-design-indoor-garden.jpg?w=397&amp;h=397&amp;f=0feb7aad15d8a8b0d5bd00125b2acf05" alt="Screen Time Children">
+                     <h6 class="py-2 card-title text-secondary font-weight-bold">'I Swore to Keep My Infant Away From Screens, But COVID Made That Hopeless'</h6>
+             </div>
+         </div>
+         <div class="col-12  col-md-4">
+    
+    
+                 <div class="card border-0">
+                 <img class="card-img-top" src="https://d.newsweek.com/en/full/1669703/voting-kids-voting-election-presidential-election.jpg?w=397&amp;h=397&amp;f=d93122708ccd581d688cdfe0948de78e"alt="Screen Time Children">
+                     <h6 class="py-2 card-title text-secondary font-weight-bold">'I Swore to Keep My Infant Away From Screens, But COVID Made That Hopeless'</h6>
+                 </div>
+             </div>
+         </div>
+        </div>   
+        
+        <div class="col-12 m-0 p-0 flex-row">
+    
+            <div class="row card border-0">
+                <div class="card-title">
+                    <a href="#"><h6 class="text-secondary font-weight-bold pl-3 mb-0">CULTURE & TRAVEL</h6>
+                    </a>
+                </div> </div>
+                <div class="row">
+                <div class="col-12 col-md-4 ">
+                 <img class="card-img-top" src="https://d.newsweek.com/en/full/1669703/voting-kids-voting-election-presidential-election.jpg?w=397&amp;h=397&amp;f=d93122708ccd581d688cdfe0948de78e"
+                 alt="Screen Time Children">
+                     <h6 class="py-2 card-title text-secondary font-weight-bold">'I Swore to Keep My Infant Away From Screens, But COVID Made That Hopeless'</h6>
+                 </div>
+           
+             <div class="col-12 col-md-4">
+    
+    
+    
+                 <div class="card border-0">
+                 <img class="card-img-top" src="https://d.newsweek.com/en/full/1670615/earth-night-color.jpg?w=397&amp;h=397&amp;f=f79c3f32cf73ccbdc04d576b5ec222fb" alt="Screen Time Children">
+                     <h6 class="py-2 card-title text-secondary font-weight-bold">'I Swore to Keep My Infant Away From Screens, But COVID Made That Hopeless'</h6>
+                 </div>
+             </div>
+             <div class="col-12 col-md-4">
+                 <div class="card border-0">
+                 <img class="card-img-top" src="https://d.newsweek.com/en/full/1656744/reopening-giza-pyramids-egypt.png?w=397&amp;h=397&amp;f=d4ccda70eb973e01a30a85425158812f"alt="Screen Time Children">
+                     <h6 class="py-2 card-title text-secondary font-weight-bold">'I Swore to Keep My Infant Away From Screens, But COVID Made That Hopeless'</h6>
+                 </div>
+             </div></div>
+            </div>
+
+<!-- MORE STORIES MD -->
+            <div class="col-md-12 flex-column p-0">
+            <h4 class="h6  text-secondary">MORE STORIES</h4>
+
+                <img class="img-thumbnail float-left border-0" src="img/washington-dc-violene-trump-maga-march-blm.jpg"  alt="">
+                <h5 class=" font-weight-bold">Trump Says Biden Won, But Only Because the 'Election Was Rigged'</h5>
+                <p class="p">The president has thus far refused to acknowledge his defeat, leaning on baseless conspiracy theories and longshot litigation to dispute the result.</p>
+             
+                <hr>
+                <img class="img-thumbnail float-left border-0" src="img/washington-dc-violene-trump-maga-march-blm.jpg"  alt="">
+                <h5 class=" font-weight-bold">Trump Says Biden Won, But Only Because the 'Election Was Rigged'</h5>
+                <p class="p">The president has thus far refused to acknowledge his defeat, leaning on baseless conspiracy theories and longshot litigation to dispute the result.</p>
+             
+                <hr>
+                <img class="img-thumbnail float-left border-0" src="img/washington-dc-violene-trump-maga-march-blm.jpg"  alt="">
+                <h5 class=" font-weight-bold">Trump Says Biden Won, But Only Because the 'Election Was Rigged'</h5>
+                <p class="p">The president has thus far refused to acknowledge his defeat, leaning on baseless conspiracy theories and longshot litigation to dispute the result.</p>
+             
+                <hr>
+                <img class="img-thumbnail float-left border-0" src="img/washington-dc-violene-trump-maga-march-blm.jpg"  alt="">
+                <h5 class=" font-weight-bold">Trump Says Biden Won, But Only Because the 'Election Was Rigged'</h5>
+                <p class="p">The president has thus far refused to acknowledge his defeat, leaning on baseless conspiracy theories and longshot litigation to dispute the result.</p>
+             
+                <hr>
+                <img class="img-thumbnail float-left border-0" src="img/washington-dc-violene-trump-maga-march-blm.jpg"  alt="">
+                <h5 class=" font-weight-bold">Trump Says Biden Won, But Only Because the 'Election Was Rigged'</h5>
+                <p class="p">The president has thus far refused to acknowledge his defeat, leaning on baseless conspiracy theories and longshot litigation to dispute the result.</p>
+             
+                <hr>
+                <img class="img-thumbnail float-left border-0" src="img/washington-dc-violene-trump-maga-march-blm.jpg"  alt="">
+                <h5 class=" font-weight-bold">Trump Says Biden Won, But Only Because the 'Election Was Rigged'</h5>
+                <p class="p">The president has thus far refused to acknowledge his defeat, leaning on baseless conspiracy theories and longshot litigation to dispute the result.</p>
+             
+                <hr>
+                <img class="img-thumbnail float-left border-0" src="img/washington-dc-violene-trump-maga-march-blm.jpg"  alt="">
+                <h5 class=" font-weight-bold">Trump Says Biden Won, But Only Because the 'Election Was Rigged'</h5>
+                <p class="p">The president has thus far refused to acknowledge his defeat, leaning on baseless conspiracy theories and longshot litigation to dispute the result.</p>
+             
+                <hr>
+                <img class="img-thumbnail float-left border-0" src="img/washington-dc-violene-trump-maga-march-blm.jpg"  alt="">
+                <h5 class=" font-weight-bold">Trump Says Biden Won, But Only Because the 'Election Was Rigged'</h5>
+                <p class="p">The president has thus far refused to acknowledge his defeat, leaning on baseless conspiracy theories and longshot litigation to dispute the result.</p>
+             
+                <hr>
+                <img class="img-thumbnail float-left border-0" src="img/washington-dc-violene-trump-maga-march-blm.jpg"  alt="">
+                <h5 class=" font-weight-bold">Trump Says Biden Won, But Only Because the 'Election Was Rigged'</h2>
+                <p class="p">The president has thus far refused to acknowledge his defeat, leaning on baseless conspiracy theories and longshot litigation to dispute the result.</p>
+            </div>
+        
+
                 </div>
       
+                <!-- featured stories -->
 
-                <div class="col-12 col-md-5">
+                <div class="col-12 col-md-5 col-lg-3">
                     <h4 class="h6  text-secondary mt-3">FEATURED STORIES</h4>
                     <img class="img-fluid mb-2" src="https://d.newsweek.com/en/full/1670743/jon-osoff.jpg" alt="">
                     <h2 class="h5  py-2 font-weight-bold">Black and Latino Groups Eye Georgia Senate Runoffs Needing a Sweep
@@ -176,9 +302,10 @@
                     <h2 class="h5  py-2 font-weight-bold">Moderna COVID Vaccine More Effective Than Pfizer: 'Tremendously Exciting'</h2>
                     <p class="p">Dr. Amesh Adalja of Johns Hopkins University said that public health agencies should be treated like "national security personnel because this is a national security crisis."</p>
                 </div>
-                </div>
-            <div class="row bg-white">
-                <div class="col m-3">
+
+                <!-- debate -->
+               
+                <div class="col-12 col-lg-3 order-lg-first pl-lg-0 pr-lg-2">
                 <h4 class="h6  text-secondary">THE DEBATE</h4>
                 <hr>
                 <div class="first-debator d-flex flex-row ">
@@ -195,11 +322,9 @@
                     <span class="p small">BY <remark>MATTHEW FEENEY</remark></span>
                     </div>
                 </div>
-            </div>
-        </div>
-                    
-            <div class="row mb-3">
-                <div class="col-12">
+          
+   
+            <div class="col-12 pl-lg-0 pr-lg-1">
                 <h4 class="h6 py-2 text-secondary">OPINION</h4>
                     <div class="first-debator d-flex flex-row ">
                         <img class="img-fluid" src="https://d.newsweek.com/en/full/1669855/sean-durns.png" alt="Will Chamberlain" title="Will Chamberlain" width="63" height="63" loading="lazy">
@@ -251,9 +376,8 @@
                         <span class="p small text-uppercase">BY <remark>Mark Davis</remark></span>
                     </div></div>
                 </div>
-            </div>
 
-            <div class="row bg-white justtify-self-center mb-3">
+            <div class="row bg-white justtify-self-center my-3">
                 <div class="col">
                     <div class="card">
                     <img class="img-fluid card-img-top" src="https://d.newsweek.com/en/full/1664748/yonsei-university-school-business.jpg" alt="">
@@ -308,9 +432,9 @@
                 </div>
                 </div>
             
-                <div class="row mb-3 bg-white">
+                <div class="row mb-3 bg-white d-md-none">
                     <div class="col">
-    
+    <!-- MORE STORIES -->
                 <h4 class="h6  text-secondary">MORE STORIES</h4>
 
                 <img class="img-thumbnail float-left border-0" src="img/washington-dc-violene-trump-maga-march-blm.jpg"  alt="">
@@ -361,7 +485,7 @@
 
                <!-- MY TURN -->
             
-                <div class="col-12  p-0">
+                <div class="col-12 d-md-none">
                         <div class="card border-0">
                             <div class="card-title">
                                 <a href="#"><h6 class="text-secondary font-weight-bold">MY TURN</h6>
@@ -380,7 +504,7 @@
                         </div>
                     </div>
                                        
-            <div class="row bg-white">
+            <div class="row bg-white d-md-none">
                 <div class="col">
                         <div class="card border-0">
                             <div class="card-title">
@@ -404,49 +528,53 @@
        <!-- IN THE MAGAZINE -->
             
                 <div class="row bg-white mx-1">
-                    <div class="col-12 p-0">
-                            <div class="card border-0">
+                            <div class="col-12">
                                 <div class="card-title d-flex justify-content-center">
                                     <img src="https://g.newsweek.com/www/images/logo-n1.svg" width=38px
                                      class="bg-danger img-fluid"> 
                                     <h4 class="px-2 font-weight-bold">IN THE MAGAZINE</h4>
                                   
                                 </div>
+                            </div>
+
+                    <div class="col-12 col-md-3">
+                            <div class="card border-0">
+                            
                             <img class="card-img-top" src="/img/biden.webp"
                             alt="Screen Time Children">
                             <div class="card-text bg-lightgrey my-2">
                             <h3 class="pt-2 card-title d-flex justify-content-center font-weight-bold">SEE ALL FEATURES ></h3></div>  </div></div>
                         
-                            <div class="col-12 px-0">
+                            <div class="col-12 px-2 col-md-3">
                                 <img  class="img-fluid " src="https://d.newsweek.com/en/full/1667282/fe-biden-cover-feature-01.jpg">
                                 <button type="button" class="btn btn-danger text-white font-weight-bold p-2 h5">COVER</button><button type="button" class="btn text-danger font-weight-bold p-2 h5 text-uppercase my-2">politics</button>
                                 <h2 class="h5 mb-4 font-weight-bold">'Trump Just Conceded': Reactions Follow President's 'He Won Because' Tweet</h2>
                             </div>  
-                            <div class="col-12 px-0">
+                            <div class="col-12 px-2 col-md-3">
                                 <img  class="img-fluid " src="https://d.newsweek.com/en/full/1664636/uber-driver-prop-22.jpg">
                                 <button type="button" class="btn btn-danger text-white font-weight-bold p-2 h5">PERISCOPE</button><button type="button" class="btn text-danger font-weight-bold p-2 h5 text-uppercase my-2">bussiness</button>
                                 <h2 class="h5 mb-4 font-weight-bold">'Trump Just Conceded': Reactions Follow President's 'He Won Because' Tweet</h2>
                             </div>  
 
-                            <div class="col-12 px-0">
+                            <div class="col-12 px-2 col-md-3">
                                 <img  class="img-fluid " src="https://d.newsweek.com/en/full/1667703/cul-eno-banner-02.jpg">
                                 <button type="button" class="btn btn-danger text-white font-weight-bold p-2 h5">DOWNTIME</button><button type="button" class="btn text-danger font-weight-bold p-2 h5 text-uppercase my-2">culture</button>
                                 <h2 class="h5 mb-4 font-weight-bold">'Trump Just Conceded': Reactions Follow President's 'He Won Because' Tweet</h2>
                             </div>  
 
-                            <div class="col-12 px-0">
+                            <div class="col-12 px-2 col-md-3">
                                 <img  class="img-fluid " src="https://d.newsweek.com/en/full/1662335/cul-map-007-banner.jpg">
                                 <button type="button" class="btn btn-danger text-white font-weight-bold p-2 h5">DOWNTIME</button><button type="button" class="btn text-danger font-weight-bold p-2 h5 text-uppercase my-2">culture</button>
                                 <h2 class="h5 mb-4 font-weight-bold">'Trump Just Conceded': Reactions Follow President's 'He Won Because' Tweet</h2>
                             </div>  
 
-                            <div class="col-12 px-0">
+                            <div class="col-12 px-2 col-md-3">
                                 <img  class="img-fluid " src="https://d.newsweek.com/en/full/1656435/parting-shot-kristen-chenoweth.jpg">
                                 <button type="button" class="btn btn-danger text-white font-weight-bold p-2 h5">COVER</button><button type="button" class="btn text-danger font-weight-bold p-2 h5 text-uppercase my-2">politics</button>
                                 <h2 class="mb-4 h5 font-weight-bold">'Trump Just Conceded': Reactions Follow President's 'He Won Because' Tweet</h2>
                             </div>  
 
-                            <div class="col-12 px-0">
+                            <div class="col-12 px-2 col-md-3">
                                 <img  class="img-fluid " src="https://d.newsweek.com/en/full/1667282/fe-biden-cover-feature-01.jpg">
                                 <button type="button" class="btn btn-danger text-white font-weight-bold p-2 h5">COVER</button><button type="button" class="btn text-danger font-weight-bold p-2 h5 text-uppercase my-2">politics</button>
                                 <h2 class="mb-4 h5 font-weight-bold">'Trump Just Conceded': Reactions Follow President's 'He Won Because' Tweet</h2>
@@ -454,23 +582,27 @@
                            
                             </div>  
                         <!-- EDITOR'S PICK -->
-                <div class="row bg-white">
-                    <div class="col-12">
-                            <div class="card border-0 ">
+                       
+                        <div class="row bg-white mx-1">
+                            <div class="col-12">
                                 <div class="card-title d-flex justify-content-center">
                                     <img src="https://g.newsweek.com/www/images/logo-n1.svg" width=38px
                                      class="bg-danger img-fluid"> 
-                                    <h4 class="px-2 font-weight-bold">EDITOR'S PICK</h4></div></div></div>
+                                    <h4 class="px-2 font-weight-bold">EDITOR'S PICK</h4>
+                                  
+                                </div>
+                            </div>
                                 
-                    <div class="col-12">
-                        <hr>
+                            <div class="col-12 px-2 col-md-6">
+                                <hr>
                         <img  class="img-fluid py-2" src="https://d.newsweek.com/en/full/1670998/anthony-fauci-covid-coronavirus-getty.jpg">
                         <h2 class="h5  py-2 font-weight-bold">Black and Latino Groups Eye Georgia Senate Runoffs Needing a Sweep
                         </h2>
                         <p class="p">The balance of power in the Senate—and level of effectiveness of Joe Biden's incoming administration—hangs in the balance with dual Senate runoffs in Georgia, and Black and Latino groups are mobilizing to try to win two seats in an incredibly challenging political environment.</p>
                                 </div>
         
-                    <div class="col-12">
+                                <div class="col-12 px-2 col-md-6">
+
                         <hr>
                         <img  class="img-fluid py-2" src="https://d.newsweek.com/en/full/1662335/cul-map-007-banner.jpg">
                         <h2 class="h5  py-2 font-weight-bold">Black and Latino Groups Eye Georgia Senate Runoffs Needing a Sweep
@@ -478,7 +610,8 @@
                         <p class="p">The balance of power in the Senate—and level of effectiveness of Joe Biden's incoming administration—hangs in the balance with dual Senate runoffs in Georgia, and Black and Latino groups are mobilizing to try to win two seats in an incredibly challenging political environment.</p>
                                 </div>
         
-                    <div class="col-12">
+                                <div class="col-12 px-2 col-md-6">
+
                         <hr>
                         <img  class="img-fluid py-2" src="https://d.newsweek.com/en/full/1662335/cul-map-007-banner.jpg">
                         <h2 class="h5  py-2 font-weight-bold">Black and Latino Groups Eye Georgia Senate Runoffs Needing a Sweep
@@ -486,7 +619,8 @@
                         <p class="p">The balance of power in the Senate—and level of effectiveness of Joe Biden's incoming administration—hangs in the balance with dual Senate runoffs in Georgia, and Black and Latino groups are mobilizing to try to win two seats in an incredibly challenging political environment.</p>
                                 </div>
         
-                    <div class="col-12">
+                                <div class="col-12 px-2 col-md-6">
+
                         <hr>
                         <img  class="img-fluid py-2" src="https://d.newsweek.com/en/full/1662335/cul-map-007-banner.jpg">
                         <h2 class="h5  py-2 font-weight-bold">Black and Latino Groups Eye Georgia Senate Runoffs Needing a Sweep
@@ -494,7 +628,8 @@
                         <p class="p">The balance of power in the Senate—and level of effectiveness of Joe Biden's incoming administration—hangs in the balance with dual Senate runoffs in Georgia, and Black and Latino groups are mobilizing to try to win two seats in an incredibly challenging political environment.</p>
                                 </div>
         
-                    <div class="col-12">
+                                <div class="col-12 px-2 col-md-6">
+
                         <hr>
                         <img  class="img-fluid py-2" src="https://d.newsweek.com/en/full/1662335/cul-map-007-banner.jpg">
                         <h2 class="h5  py-2 font-weight-bold">Black and Latino Groups Eye Georgia Senate Runoffs Needing a Sweep
@@ -502,7 +637,8 @@
                         <p class="p">The balance of power in the Senate—and level of effectiveness of Joe Biden's incoming administration—hangs in the balance with dual Senate runoffs in Georgia, and Black and Latino groups are mobilizing to try to win two seats in an incredibly challenging political environment.</p>
                                 </div>
         
-                    <div class="col-12">
+                                <div class="col-12 px-2 col-md-6">
+
                         <hr>
                         <img  class="img-fluid py-2" src="https://d.newsweek.com/en/full/1662335/cul-map-007-banner.jpg">
                         <h2 class="h5  py-2 font-weight-bold">Black and Latino Groups Eye Georgia Senate Runoffs Needing a Sweep
@@ -510,7 +646,8 @@
                         <p class="p">The balance of power in the Senate—and level of effectiveness of Joe Biden's incoming administration—hangs in the balance with dual Senate runoffs in Georgia, and Black and Latino groups are mobilizing to try to win two seats in an incredibly challenging political environment.</p>
                                 </div>
         
-                    <div class="col-12">
+                                <div class="col-12 px-2 col-md-6">
+
                         <hr>
                         <img  class="img-fluid py-2" src="https://d.newsweek.com/en/full/1662335/cul-map-007-banner.jpg">
                         <h2 class="h5  py-2 font-weight-bold">Black and Latino Groups Eye Georgia Senate Runoffs Needing a Sweep
@@ -518,7 +655,8 @@
                         <p class="p">The balance of power in the Senate—and level of effectiveness of Joe Biden's incoming administration—hangs in the balance with dual Senate runoffs in Georgia, and Black and Latino groups are mobilizing to try to win two seats in an incredibly challenging political environment.</p>
                                 </div>
         
-                    <div class="col-12">
+                                <div class="col-12 px-2 col-md-6">
+
                         <hr>
                         <img  class="img-fluid py-2" src="https://d.newsweek.com/en/full/1662335/cul-map-007-banner.jpg">
                         <h2 class="h5  py-2 font-weight-bold">Black and Latino Groups Eye Georgia Senate Runoffs Needing a Sweep
@@ -533,11 +671,12 @@
                         <a href="#"><h4 class="text-danger mx-3 font-weight-bold">SUSCRIBE</h4>
                         </a>
                         <div class="col-12 mb-4">
-                        <div class="card bg-lightgrey pt-5 border-0 align-items-center">
+                        <div class="card bg-lightgrey pt-5 border-0 align-items-center d-md-flex flex-md-row">
+                            <div class="col-md-6"></div>
                             <img class="card-img-top w-25  position-absolute" src="https://d.newsweek.com/en/full/1658908/cover-november-06-11-2020.jpg">
                             <img class="card-img-top w-25 ml-5 position-absolute mt-3" src="https://d.newsweek.com/en/full/1668137/cover-november-20-2020.jpg">
-                              <div class="suscribe-body card-body d-flex flex-column align-items-center">
-                                  <div class="class-title">  <h2 class="h4 mx-5 font-weight-bold text-center">In-depth Stories You Don't See Elsewhere About Topics You Want to Read!
+                              <div class="suscribe-body card-body d-flex flex-column align-items-center col-md-6 ">
+                                  <div class="class-title">  <h2 class="h4 mx-5 font-weight-bold text-center ">In-depth Stories You Don't See Elsewhere About Topics You Want to Read!
                                 </h2></div>
                               <p class="h6 card-text text-center mx-5">All Access + Weekly Delivery.
                                 Choose A Membership That's Perfect for You!</p>
@@ -545,12 +684,12 @@
                             </div>
                           </div>
 
-                          <div class="col-12 p-1">
+                          <div class="col-12 p-1 ">
                             <a href="#"><h4 class="text-danger mx-3 font-weight-bold">NEWSLETTER</h4>
                             </a>
-                            <div class="col-12 mb-4">
-                            <div class="card bg-lightgrey border-0">
-                                <img class="img-fluid" src="https://d.newsweek.com/en/full/1541302/starting5-homepage.png">
+                            <div class="col-12 mb-4 d-md-flex">
+                            <div class="card bg-lightgrey border-0 d-md-flex flex-md-row">
+                                <img class="img-fluid d-md-flex flex-md-row w-100 " src="https://d.newsweek.com/en/full/1541302/starting5-homepage.png">
                                   <div class="card-body d-flex flex-column align-items-center">
                                         <div class="class-title">  <h2 class="h4 mx-5 font-weight-bold text-center">THE STARTING 5    </h2></div>
                                   <p class="h6 card-text text-center mx-5">All Access + Weekly Delivery.
@@ -564,12 +703,12 @@
 
                                     <footer class="footer navbar">
                                     <div class="row">
-                                        <div class="col-12 p-1">
+                                        <div class="col-12 p-1 d-flex flex-column flex-md-row align-items-md-baseline justify-content-md-between">
                                             <a href="#" class="navbar-brand text-danger">
                                                 <img src="img/newsweek.png" width="250px" alt="">
                                             </a>
                                             <p class="p text-secondary">2020 NEWSWEEK DIGITAL LLC</p>
-                                            <div class="icons d-flex text-secondary">
+                                            <div class="icons d-flex text-secondary pl-md-5 ml-md-5">
                                                 <i class="fab fa-facebook-square px-1 fa-2x"></i>
                                                 <i class="fab fa-twitter px-1 fa-2x"></i>
                                                 <i class="fab fa-instagram px-1 fa-2x"></i>
@@ -619,3 +758,6 @@
     -->
   </body>
 </html>
+
+<!-- onclick="location.href='index.html';"
+ -->
