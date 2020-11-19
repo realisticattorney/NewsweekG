@@ -8,7 +8,6 @@ This is the HTML/CSS project #7, from the Microverse's main curriculum and aims 
 
 - HTML
 - BOOTSTRAP
-- CSS layouts (flex, flexbox, grid and media query)
 
 ## Live Demo
 
