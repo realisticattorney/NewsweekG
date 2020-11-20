@@ -2,7 +2,7 @@
 
 This is the HTML/CSS project #7, from the Microverse's main curriculum and aims to build a clone of newsweek.com homepage using mainly Bootstrap. 
 
-![screenshot](./img/screenshot.png)
+![screenshot](./img/screenshot2.png)
 
 ## Built With
 
