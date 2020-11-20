@@ -82,7 +82,7 @@ p {
 }
 
 .suscribe-body {
-  margin-top: 15rem !important;
+  margin-top: 15rem ;
 }
 
 .icons {
@@ -106,7 +106,7 @@ p {
 
 @media screen and (min-width: 768px) {
   .suscribe-body {
-    margin-top: 5rem !important;
+    margin-top: 5rem;
   }
 
   .newsletter img {
@@ -122,8 +122,8 @@ p {
     line-height: 20px;
   }
 
-  .newsletter button {
-    width: 100% !important;
+  .newsletter {
+    width: 100% ;
   }
 
   .newsletter img {
