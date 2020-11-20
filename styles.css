@@ -14,13 +14,13 @@ body {
   width: 95px;
   height: 95px;
 }
-
+.nav-item {
+   padding-right: 20px;
+}
 .nav-item > a {
   color: black;
   border-right: lightgray solid 1px;
-  padding: 0.3rem;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 0.20rem 0px;
   font-size: 19px;
 }
 
@@ -82,7 +82,7 @@ p {
 }
 
 .suscribe-body {
-  margin-top: 15rem;
+  margin-top: 15rem ;
 }
 
 .icons {
@@ -103,10 +103,9 @@ p {
 .newslogo {
   filter: brightness(999);
 }
-
 .newsletter img {
-  height: 170px;
-  object-fit: cover;
+   height: 170px;
+   object-fit: cover;
 }
 
 @media screen and (min-width: 768px) {
@@ -118,6 +117,8 @@ p {
     width: 50%;
     min-height: 240px;
   }
+
+
 }
 
 @media screen and (min-width: 992px) {
@@ -128,18 +129,19 @@ p {
   }
 
   .newsletter {
-    width: 100%;
+    width: 100% ;
+
   }
 
   .newsletter img,
   .suscribe-form {
-    min-height: 275px;
-    width: auto;
+     min-height: 275px;
+     width: auto;
+     
   }
-
   .suscribe-body {
-    margin-top: 3.2rem;
-  }
+   margin-top: 3.2rem;
+ }
 }
 
 .overlay-names {
