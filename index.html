@@ -1,0 +1,826 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/e3ae6e792d.js" crossorigin="anonymous"></script>
+    <!-- main css -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Newsweek</title>
+
+    </head>
+  <body>
+      <div class="container-fluid p-0">
+      <!-- navbar -->
+    <header id="header">
+ <nav class="navbar bg-orange navbar-expand-lg align-items-center justify-content-between p-0 text-white">
+            <i class="d-none d-lg-inline fas fa-cloud-sun-rain m-1 ml-3"><span class="span d-inline">24 BUENOS AIRES, AR></span><span class="span d-block m-1">Tue, Nov 17, 2020</span></i>
+            <a href="#" class="navbar-brand">
+                <img class="d-lg-none" src="img/NW-logo1.png" width="155" alt="">
+                <img class="d-none d-lg-inline newslogo align-items-center position-relative pt-3 pb-2" src="img/newsweek.png" width="420" alt="">
+            </a>
+            <div class="right-side align-self-end mr-md-2 mr-lg-3 mb-2">
+            <a href="" class="btn d-md-none"><i class="fas fas fa-user  bg-orange  text-lightgrey"></i></a>
+            <a href="#" class="d-none d-md-inline h5 text-white font-weight-bold pr-3"><small>LOG IN</small></a>
+            <button type="button" class="d-md-none btn btn-yellow rounded-pill font-weight-bold py-0">SUSCRIBE <span class="text-muted">></span></button>
+            <button type="button" class="d-none d-md-inline btn btn-yellow rounded-pill font-weight-bold h5 py-1"><small><strong>SUSCRIBE</strong></small> <span class="text-muted">></span></button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                <span class="toggler-icon">
+                    <i class="d-md-none  fas fa-bars text-lightgrey "></i>
+                    <i class="d-none d-md-inline fas fa-bars text-lightgrey fa-2x"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="navbar-nav text-capitalize"></ul>
+            </div>
+        </div>
+        </nav>
+        <!-- 2nd navbar (lg) -->
+        <nav class="navbar navbar-expand d-none d-lg-flex font-weight-bold text-capitalize border-bottom justify-content-around">
+            <ul class="navbar-nav ">
+                <li class="nav-item active ">
+                    <a href="#" class="nav-link">U.S.</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">world</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">bussiness</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">tech & science</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">culture</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">sports</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">health</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">the debate</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">vantage</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">weather</a>
+                </li>
+            </ul>
+                <input type="text" placeholder="Search" aria-label="small" class="border-0 search-input">
+                <i class="fas fa-search d-inline"></i> 
+         
+        </nav>
+    </header>
+    <!-- third navbar -->
+    <nav class="navbar navbar-expand d-none d-lg-flex font-weight-bold text-capitalize border-bottom ">
+        <ul class="navbar-nav subnav">
+            <li class="nav-item active ">
+                <a href="#" class="nav-link text-dark">TRENDING</a>
+            </li>
+            <li class="nav-item active">
+                <a href="#" class="nav-link">JOE BIDEN
+                </a>
+            </li>
+            <li class="nav-item active">
+                <a href="#" class="nav-link">DONALD TRUMP</a>
+            </li>
+            <li class="nav-item active">
+                <a href="#" class="nav-link">2020 ELECTION
+                </a>
+            </li>
+            <li class="nav-item active">
+                <a href="#" class="nav-link">CORONAVIRUS
+                </a>
+            </li>
+            <li class="nav-item active">
+                <a href="#" class="nav-link">STIMULUS PACKAGE</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+<!-- main -->
+
+<!-- top story -->
+        <div class="container-fluid">
+            <div class="row mb-3 justify-content-center flex-md-row-reverse row-cols-3">
+                <div class="col-12 col-md-7 col-lg-5 mx-lg-3">
+                    <h4 class="h6 text-secondary mt-3">TOP STORY</h4>
+                <img  class="img-fluid mb-2" src="img/washington-dc-violene-trump-maga-march-blm.jpg" alt="march">
+                <h2 class="h5 py-2 font-weight-bold">'Trump Just Conceded': Reactions Follow President's 'He Won Because' Tweet</h2>
+                <p class="p">"Trump, who says a lot of things about the election here that even his own administration has rejected,
+                     acknowledges Biden won for the first time," wrote Kaitlan Collins, CNN's White House correspondent.</p>
+                    <hr>
+                <img class="img-thumbnail float-left border-0" src="img/washington-dc-violene-trump-maga-march-blm.jpg"  alt="march">
+                <h2 class="h5  py-2 font-weight-bold">Trump Says Biden Won, But Only Because the 'Election Was Rigged'</h2>
+                <p class="p">The president has thus far refused to acknowledge his defeat, leaning on baseless conspiracy theories and longshot litigation to dispute the result.</p>
+
+                <!--myturn  -->
+                
+                <div class="col-12 m-0 p-0 flex-row">
+                  
+                        
+                 <div class="row card border-0">
+                     <div class="card-title">
+                         <a href="#"><h6 class="text-secondary font-weight-bold pl-3 mb-0">MY TURN</h6>
+                         </a>
+                     </div> </div>
+                     <div class="row">
+                     <div class="col-12 col-md-4 ">
+                 <img class="card-img-top" src="https://d.newsweek.com/en/full/1669099/screen-time-children.jpg?w=397&amp;h=397&amp;f=fa524cf1e8e3c3e000b34bd9de607b60" alt="Screen Time Children">
+                     <h6 class="py-2 card-title text-secondary font-weight-bold">'I Swore to Keep My Infant Away From Screens, But COVID Made That Hopeless'</h6>
+                 </div>
+            
+             <div class="col-12  col-md-4">
+    
+    
+                 <div class="card border-0">
+                 <img class="card-img-top" src="https://d.newsweek.com/en/full/1670967/plants-interior-design-indoor-garden.jpg?w=397&amp;h=397&amp;f=0feb7aad15d8a8b0d5bd00125b2acf05" alt="Screen Time Children">
+                     <h6 class="py-2 card-title text-secondary font-weight-bold">'I Swore to Keep My Infant Away From Screens, But COVID Made That Hopeless'</h6>
+             </div>
+         </div>
+         <div class="col-12  col-md-4">
+    
+    
+                 <div class="card border-0">
+                 <img class="card-img-top" src="https://d.newsweek.com/en/full/1669703/voting-kids-voting-election-presidential-election.jpg?w=397&amp;h=397&amp;f=d93122708ccd581d688cdfe0948de78e" alt="Screen Time Children">
+                     <h6 class="py-2 card-title text-secondary font-weight-bold">'I Swore to Keep My Infant Away From Screens, But COVID Made That Hopeless'</h6>
+                 </div>
+             </div>
+         </div>
+        </div>   
+        <!-- culture & travel -->
+        <div class="col-12 m-0 p-0 flex-row">
+    
+            <div class="row card border-0">
+                <div class="card-title">
+                    <a href="#"><h6 class="text-secondary font-weight-bold pl-3 mb-0">CULTURE & TRAVEL</h6>
+                    </a>
+                </div> </div>
+                <div class="row">
+                <div class="col-12 col-md-4 ">
+                 <img class="card-img-top" src="https://d.newsweek.com/en/full/1669703/voting-kids-voting-election-presidential-election.jpg?w=397&amp;h=397&amp;f=d93122708ccd581d688cdfe0948de78e"
+                 alt="Screen Time Children">
+                     <h6 class="py-2 card-title text-secondary font-weight-bold">'I Swore to Keep My Infant Away From Screens, But COVID Made That Hopeless'</h6>
+                 </div>
+           
+             <div class="col-12 col-md-4">
+    
+    
+    
+                 <div class="card border-0">
+                 <img class="card-img-top" src="https://d.newsweek.com/en/full/1670615/earth-night-color.jpg?w=397&amp;h=397&amp;f=f79c3f32cf73ccbdc04d576b5ec222fb" alt="Screen Time Children">
+                     <h6 class="py-2 card-title text-secondary font-weight-bold">'I Swore to Keep My Infant Away From Screens, But COVID Made That Hopeless'</h6>
+                 </div>
+             </div>
+             <div class="col-12 col-md-4">
+                 <div class="card border-0">
+                 <img class="card-img-top" src="https://d.newsweek.com/en/full/1656744/reopening-giza-pyramids-egypt.png?w=397&amp;h=397&amp;f=d4ccda70eb973e01a30a85425158812f" alt="Screen Time Children">
+                     <h6 class="py-2 card-title text-secondary font-weight-bold">'I Swore to Keep My Infant Away From Screens, But COVID Made That Hopeless'</h6>
+                 </div>
+             </div></div>
+            </div>
+
+<!-- MORE STORIES MD -->
+            <div class="col-md-12 flex-column p-0">
+            <h4 class="h6  text-secondary my-3">MORE STORIES</h4>
+                <hr>
+                <img class="img-thumbnail float-left border-0 mr-2  mr-2 " src="img/washington-dc-violene-trump-maga-march-blm.jpg"  alt="">
+                <h5 class=" font-weight-bold">Trump Says Biden Won, But Only Because the 'Election Was Rigged'</h5>
+                <p class="p">Millions of Americans prepare to celebrate the national holiday next week with conflicting advice over whether to mark the day with traditional gatherings.</p>
+                
+                <hr>
+                <img class="img-thumbnail float-left border-0 mr-2 " src="img/washington-dc-violene-trump-maga-march-blm.jpg"  alt="">
+                <h5 class=" font-weight-bold">Trump Says Biden Won, But Only Because the 'Election Was Rigged'</h5>
+                <p class="p">The president has thus far refused to acknowledge his defeat, leaning on baseless conspiracy theories and longshot litigation to dispute the result.</p>
+             
+                <hr>
+                <img class="img-thumbnail float-left border-0 mr-2 " src="img/washington-dc-violene-trump-maga-march-blm.jpg"  alt="">
+                <h5 class=" font-weight-bold">Trump Says Biden Won, But Only Because the 'Election Was Rigged'</h5>
+                <p class="p">The president has thus far refused to acknowledge his defeat, leaning on baseless conspiracy theories and longshot litigation to dispute the result.</p>
+             
+                <hr>
+                <img class="img-thumbnail float-left border-0 mr-2 " src="img/washington-dc-violene-trump-maga-march-blm.jpg"  alt="">
+                <h5 class=" font-weight-bold">Trump Says Biden Won, But Only Because the 'Election Was Rigged'</h5>
+                <p class="p">The president has thus far refused to acknowledge his defeat, leaning on baseless conspiracy theories and longshot litigation to dispute the result.</p>
+             
+                <hr>
+                <img class="img-thumbnail float-left border-0 mr-2 " src="img/washington-dc-violene-trump-maga-march-blm.jpg"  alt="">
+                <h5 class=" font-weight-bold">Trump Says Biden Won, But Only Because the 'Election Was Rigged'</h5>
+                <p class="p">The president has thus far refused to acknowledge his defeat, leaning on baseless conspiracy theories and longshot litigation to dispute the result.</p>
+             
+                <hr>
+                <img class="img-thumbnail float-left border-0 mr-2 " src="img/washington-dc-violene-trump-maga-march-blm.jpg"  alt="">
+                <h5 class=" font-weight-bold">Trump Says Biden Won, But Only Because the 'Election Was Rigged'</h5>
+                <p class="p">The president has thus far refused to acknowledge his defeat, leaning on baseless conspiracy theories and longshot litigation to dispute the result.</p>
+             
+                <hr>
+                <img class="img-thumbnail float-left border-0 mr-2 " src="img/washington-dc-violene-trump-maga-march-blm.jpg"  alt="">
+                <h5 class=" font-weight-bold">Trump Says Biden Won, But Only Because the 'Election Was Rigged'</h5>
+                <p class="p">The president has thus far refused to acknowledge his defeat, leaning on baseless conspiracy theories and longshot litigation to dispute the result.</p>
+             
+                <hr>
+                <img class="img-thumbnail float-left border-0 mr-2 " src="img/washington-dc-violene-trump-maga-march-blm.jpg"  alt="">
+                <h5 class=" font-weight-bold">Trump Says Biden Won, But Only Because the 'Election Was Rigged'</h5>
+                <p class="p">The president has thus far refused to acknowledge his defeat, leaning on baseless conspiracy theories and longshot litigation to dispute the result.</p>
+             
+                <hr class="d-none d-lg-block">
+                <img class="d-none d-lg-block img-thumbnail float-left border-0 mr-2 " src="img/washington-dc-violene-trump-maga-march-blm.jpg"  alt="">
+                <h5 class="d-none d-lg-block font-weight-bold">Trump Says Biden Won, But Only Because the 'Election Was Rigged'</h5>
+                <p class="p d-none d-lg-block">The president has thus far refused to acknowledge his defeat, leaning on baseless conspiracy theories and longshot litigation to dispute the result.</p>
+             
+                <hr class="d-none d-lg-block">
+                <img class="d-none d-lg-block img-thumbnail float-left border-0 mr-2 " src="img/washington-dc-violene-trump-maga-march-blm.jpg"  alt="">
+                <h5 class="d-none d-lg-block font-weight-bold">Trump Says Biden Won, But Only Because the 'Election Was Rigged'</h5>
+                <p class="p d-none d-lg-block">The president has thus far refused to acknowledge his defeat, leaning on baseless conspiracy theories and longshot litigation to dispute the result.</p>
+             
+                <hr class="d-none d-lg-block">
+                <img class="d-none d-lg-block img-thumbnail float-left border-0 mr-2 " src="img/washington-dc-violene-trump-maga-march-blm.jpg"  alt="">
+                <h5 class="d-none d-lg-block font-weight-bold">Trump Says Biden Won, But Only Because the 'Election Was Rigged'</h5>
+                <p class="p d-none d-lg-block">The president has thus far refused to acknowledge his defeat, leaning on baseless conspiracy theories and longshot litigation to dispute the result.</p>
+             
+                <hr class="d-none d-lg-block">
+                <img class="d-none d-lg-block img-thumbnail float-left border-0 mr-2 " src="img/washington-dc-violene-trump-maga-march-blm.jpg"  alt="">
+                <h5 class="d-none d-lg-block font-weight-bold">Trump Says Biden Won, But Only Because the 'Election Was Rigged'</h5>
+                <p class="p d-none d-lg-block">The president has thus far refused to acknowledge his defeat, leaning on baseless conspiracy theories and longshot litigation to dispute the result.</p>
+                <hr class="d-none d-lg-block">
+                <img class="d-none d-lg-block img-thumbnail float-left border-0 mr-2 " src="img/washington-dc-violene-trump-maga-march-blm.jpg"  alt="">
+                <h5 class="d-none d-lg-block font-weight-bold">Trump Says Biden Won, But Only Because the 'Election Was Rigged'</h5>
+                <p class="p d-none d-lg-block">The president has thus far refused to acknowledge his defeat, leaning on baseless conspiracy theories and longshot litigation to dispute the result.</p>
+            </div>
+        
+
+                </div>
+      
+                <!-- featured stories -->
+
+                <div class="col-12 col-md-5 col-lg-3 px-lg-0">
+                    <h4 class="h6  text-secondary mt-3">FEATURED STORIES</h4>
+                    <img class="img-fluid mb-2" src="https://d.newsweek.com/en/full/1670743/jon-osoff.jpg" alt="">
+                    <h2 class="h5  py-2 font-weight-bold">Black and Latino Groups Eye Georgia Senate Runoffs Needing a Sweep
+                    </h2>
+                    <p class="p">The balance of power in the Senate—and level of effectiveness of Joe Biden's incoming administration—hangs in the balance with dual Senate runoffs in Georgia, and Black and Latino groups are mobilizing to try to win two seats in an incredibly challenging political environment.</p>
+                    
+                    <img class="img-fluid mb-2" src="https://d.newsweek.com/en/full/1669324/janine-duran-llamzon-coronavirus.jpg" alt="">
+                    <h2 class="h5  py-2 font-weight-bold">Trump's National Security Adviser Says NSC Will Support Biden Transition</h2>
+                    <p class="p">Robert O'Brien, a Trump loyalist, said that it "obviously" looks like "the Biden-Harris ticket [will be] determined to be the winner" and that the National Security Council will support a smooth transition like it has "even in the most contentious periods" in history.</p>
+                    
+                    <img class="img-fluid mb-2" src="https://d.newsweek.com/en/full/1670598/rochester-shooting.jpg
+                    " alt="">
+                    <h2 class="h5  py-2 font-weight-bold">Despite Pandemic Lockdowns, Mass Shootings Are 35% Higher Than 2019 </h2>
+                    <p class="p"> The number of mass shootings in the U.S. have soared in 2020, despite widespread closures of schools, officers and many public places due to the pandemic.</p>
+                    
+                    <img class="img-fluid mb-2" src="https://d.newsweek.com/en/full/1670675/donald-trump.jpg" alt="">
+                    <h2 class="h5  py-2 font-weight-bold">Expert: If U.S. Fought World War II Like It Is COVID It Would Have Lost</h2>
+                    <p class="p">With over 15,000 business schools worldwide, it is increasingly difficult for prospective students, executives, corporate partners and other stakeholders to recognize a quality institution. That’s where an EQUIS Accreditation comes in. Find out more.
+                    </p>
+                    
+                    <img class="img-fluid mb-2" src="https://d.newsweek.com/en/full/1667461/cronavirus-cdc.jpg" alt="">
+                    <h2 class="h5  py-2 font-weight-bold">Moderna COVID Vaccine More Effective Than Pfizer: 'Tremendously Exciting'</h2>
+                    <p class="p">Dr. Amesh Adalja of Johns Hopkins University said that public health agencies should be treated like "national security personnel because this is a national security crisis."</p>
+               
+                
+                <div class="card d-none d-md-inline">
+                    <img class="card-img-top" src="https://d.newsweek.com/en/full/1666606/best-stem-2021.png" alt="">
+                    <div class="card-body">
+                    <h2 class="h5 font-weight-bold card-title">Best in STEM 2021</h2>
+                    <p class="p card-text">Meet the toymakers and brands who are lending a helping hand to science, technology, engineering and math (STEM) education
+                    </p>
+                </div></div>
+                    
+                        <div class="card d-none d-lg-inline">
+                    <img class="card-img-top" src="https://d.newsweek.com/en/full/1648617/americas-best-banks-2021.png" alt="">
+                    <div class="card-body">
+                    <h2 class="h5 font-weight-bold card-title">America's Best Banks 2021</h2>
+                    <p class="p card-text">Introducing Newsweek's first ranking of the financial institutions that best serve their customers' needs in today's challenging times.</p>
+                </div></div>
+                   
+                        <div class="card d-none d-lg-inline">
+                    <img class="card-img-top" src="https://d.newsweek.com/en/full/1641228/worlds-best-specialized-hospitals-2021.png" alt="">
+                    <div class="card-body">
+                    <h2 class="h5 font-weight-bold card-title">World's Best Specialized Hospitals 2021</h2>
+                    <p class="p card-text">In the first part of this special, we rank the best hospitals in cardiology, oncology and endocrinology.</p>
+                </div></div>
+            </div>
+
+                <!-- debate -->
+               
+                <div class="col-12 col-lg-3 order-lg-first pl-lg-0 pr-lg-2 position-relative">
+                <h4 class="h6 double-bord pb-2 text-secondary mt-3">THE DEBATE</h4>
+                <div class="first-debator d-flex flex-row pb-2 border-bottom pt-3  position-relative ">
+                <img class="img-fluid mb-2" src="img/will-chamberlain.png" alt="Will Chamberlain" title="Will Chamberlain" width="63" height="63" loading="lazy">
+                <div class="1st-debater d-flex  flex-column px-3">
+                <span class="p  font-weight-bold">Reform Section 230 Now</span>
+                <span class="p small">BY WILL CHAMBERLAIN</span>
+            </div>
+            <span class="badge badge-secondary badge-pill bg-dark py-2 mb-2 bbbadge position-absolute mb-2">VS</span></div>
+    
+            
+                <div class="second-debator  double-bord d-flex flex-row-reverse pt-3 border-top pb-2  pr-lg-2">
+                    <img class="img-fluid mb-2" src="img/matthew-feeney.png" alt="Matthew Feeney" title="Matthew Feeney" width="63" height="63">
+                    <div class="1st-debater d-flex flex-column px-2">
+                    <span class="p font-weight-bold">Don't reform Section 230</span>
+                    <span class="p small">BY MATTHEW FEENEY</span>
+                    </div>
+                </div>
+          <!-- opinion -->
+   
+            <div class="col-12 pl-0 pr-lg-1">
+                <h4 class="h6 py-2 text-secondary">OPINION</h4>
+                    <div class="first-debator d-flex flex-row ">
+                        <img class="img-fluid" src="https://d.newsweek.com/en/full/1669855/sean-durns.png" alt="Will Chamberlain" title="Will Chamberlain" width="63" height="63" loading="lazy">
+                        <div class="1st-debater d-flex flex-column px-3">
+                        <span class="p  font-weight-bold">Reform Section 230 Now</span>
+                        <span class="p small text-uppercase">BY WILL CHAMBERLAIN</span>
+                    </div></div>
+                    <hr>
+                    <div class="first-debator d-flex flex-row ">
+                        <img class="img-fluid" src="https://d.newsweek.com/en/full/1669942/john-whyte.png" alt="John Whyte" title="John Whyte" width="63" height="63" loading="lazy">
+                        <div class="1st-debater d-flex flex-column px-3">
+                        <span class="p  font-weight-bold">Reform Section 230 Now</span>
+                        <span class="p small text-uppercase">BY John Whyte</span>
+                    </div></div>
+                    <hr>
+                    <div class="first-debator d-flex flex-row ">
+                        <img class="img-fluid" src="https://d.newsweek.com/en/full/1588751/jason-rantz.png" alt="Jason Rantz" title="Jason Rantz" width="63" height="63" loading="lazy">
+                        <div class="1st-debater d-flex flex-column px-3">
+                        <span class="p  font-weight-bold">Reform Section 230 Now</span>
+                        <span class="p small text-uppercase">BY Jason Rantz</span>
+                    </div></div>
+                    <hr>
+                    <div class="first-debator d-flex flex-row ">
+                        <img class="img-fluid" src="https://d.newsweek.com/en/full/1627300/heather-mac-donald.png" alt="Heather Mac Donald" title="Heather Mac Donald" width="63" height="63" loading="lazy">
+                        <div class="1st-debater d-flex flex-column px-3">
+                        <span class="p  font-weight-bold">Reform Section 230 Now</span>
+                        <span class="p small text-uppercase">BY Heather Mac Donald</span>
+                    </div></div>
+                    <hr>
+                    <div class="first-debator d-flex flex-row ">
+                        <img class="img-fluid" src="https://d.newsweek.com/en/full/1577421/hank-gilman.png" alt="Hank Gilman" title="Hank Gilman" width="63" height="63" loading="lazy">
+                        <div class="1st-debater d-flex flex-column px-3">
+                        <span class="p  font-weight-bold">Reform Section 230 Now</span>
+                        <span class="p small text-uppercase">BY Hank Gilman</span>
+                    </div></div>
+                    <hr>
+                    <div class="first-debator d-flex flex-row ">
+                        <img class="img-fluid" src="https://d.newsweek.com/en/full/1590940/caroline-glick.png
+                        " alt="Caroline Glick" title="Caroline Glick" width="63" height="63" loading="lazy">
+                        <div class="1st-debater d-flex flex-column px-3">
+                        <span class="p  font-weight-bold">Reform Section 230 Now</span>
+                        <span class="p small text-uppercase">BY Caroline Glick</span>
+                    </div></div>
+                    <hr>
+                    <div class="first-debator d-flex flex-row ">
+                        <img class="img-fluid" src="https://d.newsweek.com/en/full/1646843/mark-davis.png" alt="Mark Davis" title="Mark Davis" width="63" height="63" loading="lazy">
+                        <div class="1st-debater d-flex flex-column px-3">
+                        <span class="p  font-weight-bold">Reform Section 230 Now</span>
+                        <span class="p small text-uppercase">BY Mark Davis</span>
+                    </div></div>
+                </div>
+
+            <div class="row bg-white justtify-self-center my-3 mr-lg-1">
+                <div class="col">
+                    <div class="card">
+                    <img class="img-fluid card-img-top" src="https://d.newsweek.com/en/full/1664748/yonsei-university-school-business.jpg" alt="">
+                    <div class="card-body">
+                    <h2 class="h5 font-weight-bold card-title">Leaders in Global Education 2020</h2>
+                    <p class="p card-text">What does it take to be a leader in Global Education? What sets the best Universities apart from the others on the world stage? Find out more..</p>
+                </div></div>
+                        <div class="card">
+                    <img class="img-fluid card-img-top" src="https://d.newsweek.com/en/full/1661994/indiana-wesleyan-university.jpg" alt="">
+                    <div class="card-body">
+                    <h2 class="h5 font-weight-bold card-title">Trump's National Security Adviser Says NSC Will Support Biden Transition</h2>
+                    <p class="p card-text">Meet the toymakers and brands who are lending a helping hand to science, technology, engineering and math (STEM) education.</p>
+                </div></div>
+                    
+                        <div class="card">
+                    <img class="card-img-top" src="https://d.newsweek.com/en/full/1640732/holy-angel-university.jpg
+                    " alt="">
+                    <div class="card-body">
+                    <h2 class="h5 font-weight-bold card-title">Despite Pandemic Lockdowns, Mass Shootings Are 35% Higher Than 2019 </h2>
+                    <p class="p card-text"> The number of mass shootings in the U.S. have soared in 2020, despite widespread closures of schools, officers and many public places due to the pandemic.</p>
+                </div></div>
+                    
+                        <div class="card d-lg-none">
+                    <img class="card-img-top" src="https://d.newsweek.com/en/full/1666606/best-stem-2021.png" alt="">
+                    <div class="card-body">
+                    <h2 class="h5 font-weight-bold card-title">Best in STEM 2021</h2>
+                    <p class="p card-text">Meet the toymakers and brands who are lending a helping hand to science, technology, engineering and math (STEM) education
+                    </p>
+                </div></div>
+                    
+                        <div class="card d-lg-none">
+                    <img class="card-img-top" src="https://d.newsweek.com/en/full/1648617/americas-best-banks-2021.png" alt="">
+                    <div class="card-body">
+                    <h2 class="h5 font-weight-bold card-title">America's Best Banks 2021</h2>
+                    <p class="p card-text">Introducing Newsweek's first ranking of the financial institutions that best serve their customers' needs in today's challenging times.</p>
+                </div></div>
+                   
+                        <div class="card d-lg-none">
+                    <img class="card-img-top" src="https://d.newsweek.com/en/full/1641228/worlds-best-specialized-hospitals-2021.png" alt="">
+                    <div class="card-body">
+                    <h2 class="h5 font-weight-bold card-title">World's Best Specialized Hospitals 2021</h2>
+                    <p class="p card-text">In the first part of this special, we rank the best hospitals in cardiology, oncology and endocrinology.</p>
+                </div></div>
+                   
+                    <div class="card">
+                    <img class="card-img-top" src="https://d.newsweek.com/en/full/1630878/best-online-shops-2021.png" alt="">
+                    <div class="card-body">
+                    <h2 class="h5 font-weight-bold card-title">Moderna COVID Vaccine More Effective Than Pfizer: 'Tremendously Exciting'</h2>
+                    <p class="p card-text">Dr. Amesh Adalja of Johns Hopkins University said that public health agencies should be treated like "national security personnel because this is a national security crisis."</p>
+                </div></div>
+                    <div class="card">
+                    <img class="card-img-top" src="https://d.newsweek.com/en/full/1630878/best-online-shops-2021.png" alt="">
+                    <div class="card-body">
+                    <h2 class="h5 font-weight-bold card-title">Moderna COVID Vaccine More Effective Than Pfizer: 'Tremendously Exciting'</h2>
+                    <p class="p card-text">Dr. Amesh Adalja of Johns Hopkins University said that public health agencies should be treated like "national security personnel because this is a national security crisis."</p>
+                </div></div>
+                    <div class="card">
+                    <img class="card-img-top" src="https://d.newsweek.com/en/full/1630878/best-online-shops-2021.png" alt="">
+                    <div class="card-body">
+                    <h2 class="h5 font-weight-bold card-title">Moderna COVID Vaccine More Effective Than Pfizer: 'Tremendously Exciting'</h2>
+                    <p class="p card-text">Dr. Amesh Adalja of Johns Hopkins University said that public health agencies should be treated like "national security personnel because this is a national security crisis."</p>
+                </div></div>
+          
+                    
+                </div>
+                </div>
+            
+                <div class="row mb-3 bg-white d-md-none">
+                    <div class="col">
+    <!-- MORE STORIES (sm) -->
+                <h4 class="h6  text-secondary">MORE STORIES</h4>
+
+                <img class="img-thumbnail float-left border-0" src="img/washington-dc-violene-trump-maga-march-blm.jpg"  alt="">
+                <h5 class=" py-2 font-weight-bold">Trump Says Biden Won, But Only Because the 'Election Was Rigged'</h5>
+                <p class="p">The president has thus far refused to acknowledge his defeat, leaning on baseless conspiracy theories and longshot litigation to dispute the result.</p>
+             
+                <hr>
+                <img class="img-thumbnail float-left border-0" src="img/washington-dc-violene-trump-maga-march-blm.jpg"  alt="">
+                <h5 class="py-2 font-weight-bold">Trump Says Biden Won, But Only Because the 'Election Was Rigged'</h5>
+                <p class="p">The president has thus far refused to acknowledge his defeat, leaning on baseless conspiracy theories and longshot litigation to dispute the result.</p>
+             
+                <hr>
+                <img class="img-thumbnail float-left border-0" src="img/washington-dc-violene-trump-maga-march-blm.jpg"  alt="">
+                <h5 class="py-2 font-weight-bold">Trump Says Biden Won, But Only Because the 'Election Was Rigged'</h5>
+                <p class="p">The president has thus far refused to acknowledge his defeat, leaning on baseless conspiracy theories and longshot litigation to dispute the result.</p>
+             
+                <hr>
+                <img class="img-thumbnail float-left border-0" src="img/washington-dc-violene-trump-maga-march-blm.jpg"  alt="">
+                <h5 class="py-2 font-weight-bold">Trump Says Biden Won, But Only Because the 'Election Was Rigged'</h5>
+                <p class="p">The president has thus far refused to acknowledge his defeat, leaning on baseless conspiracy theories and longshot litigation to dispute the result.</p>
+             
+                <hr>
+                <img class="img-thumbnail float-left border-0" src="img/washington-dc-violene-trump-maga-march-blm.jpg"  alt="">
+                <h5 class="py-2 font-weight-bold">Trump Says Biden Won, But Only Because the 'Election Was Rigged'</h5>
+                <p class="p">The president has thus far refused to acknowledge his defeat, leaning on baseless conspiracy theories and longshot litigation to dispute the result.</p>
+             
+                <hr>
+                <img class="img-thumbnail float-left border-0" src="img/washington-dc-violene-trump-maga-march-blm.jpg"  alt="">
+                <h5 class="py-2 font-weight-bold">Trump Says Biden Won, But Only Because the 'Election Was Rigged'</h5>
+                <p class="p">The president has thus far refused to acknowledge his defeat, leaning on baseless conspiracy theories and longshot litigation to dispute the result.</p>
+             
+                <hr>
+                <img class="img-thumbnail float-left border-0" src="img/washington-dc-violene-trump-maga-march-blm.jpg"  alt="">
+                <h5 class="py-2 font-weight-bold">Trump Says Biden Won, But Only Because the 'Election Was Rigged'</h5>
+                <p class="p">The president has thus far refused to acknowledge his defeat, leaning on baseless conspiracy theories and longshot litigation to dispute the result.</p>
+             
+                <hr>
+                <img class="img-thumbnail float-left border-0" src="img/washington-dc-violene-trump-maga-march-blm.jpg"  alt="">
+                <h5 class="py-2 font-weight-bold">Trump Says Biden Won, But Only Because the 'Election Was Rigged'</h5>
+                <p class="p">The president has thus far refused to acknowledge his defeat, leaning on baseless conspiracy theories and longshot litigation to dispute the result.</p>
+             
+                <hr>
+                <img class="img-thumbnail float-left border-0" src="img/washington-dc-violene-trump-maga-march-blm.jpg"  alt="">
+                <h5 class="py-2 font-weight-bold">Trump Says Biden Won, But Only Because the 'Election Was Rigged'</h5>
+                <p class="p">The president has thus far refused to acknowledge his defeat, leaning on baseless conspiracy theories and longshot litigation to dispute the result.</p>
+            </div></div>
+
+
+               <!-- MY TURN (sm) -->
+            
+                <div class="col-12 d-md-none">
+                        <div class="card border-0">
+                            <div class="card-title">
+                                <a href="#"><h6 class="text-secondary font-weight-bold">MY TURN</h6>
+                                </a>
+                            </div>
+                        <img class="card-img-top" src="https://d.newsweek.com/en/full/1669099/screen-time-children.jpg?w=397&amp;h=397&amp;f=fa524cf1e8e3c3e000b34bd9de607b60" alt="Screen Time Children">
+                            <h6 class="py-4 card-title text-secondary font-weight-bold">'I Swore to Keep My Infant Away From Screens, But COVID Made That Hopeless'</h6>
+                        </div>
+                        <div class="card border-0">
+                        <img class="card-img-top" src="https://d.newsweek.com/en/full/1670967/plants-interior-design-indoor-garden.jpg?w=397&amp;h=397&amp;f=0feb7aad15d8a8b0d5bd00125b2acf05" alt="Screen Time Children">
+                            <h6 class="py-4 card-title text-secondary font-weight-bold">'I Swore to Keep My Infant Away From Screens, But COVID Made That Hopeless'</h6>
+                        </div>
+                        <div class="card border-0">
+                        <img class="card-img-top" src="https://d.newsweek.com/en/full/1669703/voting-kids-voting-election-presidential-election.jpg?w=397&amp;h=397&amp;f=d93122708ccd581d688cdfe0948de78e" alt="Screen Time Children">
+                            <h6 class="py-4 card-title text-secondary font-weight-bold">'I Swore to Keep My Infant Away From Screens, But COVID Made That Hopeless'</h6>
+                        </div>
+                    </div>
+                                       
+            <div class="row bg-white d-md-none">
+                <div class="col">
+                        <div class="card border-0">
+                            <div class="card-title">
+                                <a href="#"><h6 class="text-secondary font-weight-bold">CULTURE & TRAVEL</h6>
+                                </a>
+                            </div>
+                        <img class="card-img-top" src="https://d.newsweek.com/en/full/1669703/voting-kids-voting-election-presidential-election.jpg?w=397&amp;h=397&amp;f=d93122708ccd581d688cdfe0948de78e"
+                        alt="Screen Time Children">
+                            <h6 class="py-4 card-title text-secondary font-weight-bold">'I Swore to Keep My Infant Away From Screens, But COVID Made That Hopeless'</h6>
+                        </div>
+                        <div class="card border-0">
+                        <img class="card-img-top" src="https://d.newsweek.com/en/full/1670615/earth-night-color.jpg?w=397&amp;h=397&amp;f=f79c3f32cf73ccbdc04d576b5ec222fb" alt="Screen Time Children">
+                            <h6 class="py-4 card-title text-secondary font-weight-bold">'I Swore to Keep My Infant Away From Screens, But COVID Made That Hopeless'</h6>
+                        </div>
+                        <div class="card border-0">
+                        <img class="card-img-top" src="https://d.newsweek.com/en/full/1656744/reopening-giza-pyramids-egypt.png?w=397&amp;h=397&amp;f=d4ccda70eb973e01a30a85425158812f" alt="Screen Time Children">
+                            <h6 class="py-4 card-title text-secondary font-weight-bold">'I Swore to Keep My Infant Away From Screens, But COVID Made That Hopeless'</h6>
+                        </div>
+                    </div></div>
+                    </div>  </div>
+       <!-- IN THE MAGAZINE -->
+            
+                <div class="row bg-white mx-1">
+                            <div class="col-12">
+                                <div class="card-title d-flex justify-content-center ml-4 ">
+                                    <img src="https://g.newsweek.com/www/images/logo-n1.svg" width="38"
+                                     class="bg-danger img-fluid"  alt="Screen Time Children"> 
+                                    <h4 class="px-2 font-weight-bold">IN THE MAGAZINE</h4>
+                                  
+                                </div>
+                            </div>
+
+                    <div class="col-12 col-md-3">
+                            <div class="card border-0">
+                            
+                            <img class="card-img-top" src="/img/biden.png" 
+                            alt="Screen Time Children">
+                            <div class="card-text bg-lightgrey my-2">
+                            <h3 class="pt-2 card-title d-flex justify-content-center font-weight-bold">SEE ALL FEATURES ></h3></div>  </div></div>
+                        
+                            <div class="col-12 px-2 col-md-3">
+                                <img  class="img-fluid " alt="Screen Time Children" src="https://d.newsweek.com/en/full/1667282/fe-biden-cover-feature-01.jpg">
+                                <button type="button" class="btn btn-danger text-white font-weight-bold p-2 h5">COVER</button><button type="button" class="btn text-danger font-weight-bold p-2 h5 text-uppercase my-2">politics</button>
+                                <h2 class="h5 mb-4 font-weight-bold">'Trump Just Conceded': Reactions Follow President's 'He Won Because' Tweet</h2>
+                            </div>  
+                            <div class="col-12 px-2 col-md-3">
+                                <img  class="img-fluid " alt="Screen Time Children" src="https://d.newsweek.com/en/full/1664636/uber-driver-prop-22.jpg">
+                                <button type="button" class="btn btn-danger text-white font-weight-bold p-2 h5">PERISCOPE</button><button type="button" class="btn text-danger font-weight-bold p-2 h5 text-uppercase my-2">bussiness</button>
+                                <h2 class="h5 mb-4 font-weight-bold">'Trump Just Conceded': Reactions Follow President's 'He Won Because' Tweet</h2>
+                            </div>  
+
+                            <div class="col-12 px-2 col-md-3">
+                                <img  class="img-fluid " alt="Screen Time Children"  src="https://d.newsweek.com/en/full/1667703/cul-eno-banner-02.jpg">
+                                <button type="button" class="btn btn-danger text-white font-weight-bold p-2 h5">DOWNTIME</button><button type="button" class="btn text-danger font-weight-bold p-2 h5 text-uppercase my-2">culture</button>
+                                <h2 class="h5 mb-4 font-weight-bold">'Trump Just Conceded': Reactions Follow President's 'He Won Because' Tweet</h2>
+                            </div>  
+
+                            <div class="col-12 px-2 col-md-3">
+                                <img  class="img-fluid "  alt="Screen Time Children" src="https://d.newsweek.com/en/full/1662335/cul-map-007-banner.jpg">
+                                <button type="button" class="btn btn-danger text-white font-weight-bold p-2 h5">DOWNTIME</button><button type="button" class="btn text-danger font-weight-bold p-2 h5 text-uppercase my-2">culture</button>
+                                <h2 class="h5 mb-4 font-weight-bold">'Trump Just Conceded': Reactions Follow President's 'He Won Because' Tweet</h2>
+                            </div>  
+
+                            <div class="col-12 px-2 col-md-3">
+                                <img  class="img-fluid "  alt="Screen Time Children"  src="https://d.newsweek.com/en/full/1656435/parting-shot-kristen-chenoweth.jpg">
+                                <button type="button" class="btn btn-danger text-white font-weight-bold p-2 h5">COVER</button><button type="button" class="btn text-danger font-weight-bold p-2 h5 text-uppercase my-2">politics</button>
+                                <h2 class="mb-4 h5 font-weight-bold">'Trump Just Conceded': Reactions Follow President's 'He Won Because' Tweet</h2>
+                            </div>  
+
+                            <div class="col-12 px-2 col-md-3">
+                                <img  class="img-fluid "  alt="Screen Time Children"  src="https://d.newsweek.com/en/full/1667282/fe-biden-cover-feature-01.jpg">
+                                <button type="button" class="btn btn-danger text-white font-weight-bold p-2 h5">COVER</button><button type="button" class="btn text-danger font-weight-bold p-2 h5 text-uppercase my-2">politics</button>
+                                <h2 class="mb-4 h5 font-weight-bold">'Trump Just Conceded': Reactions Follow President's 'He Won Because' Tweet</h2>
+                            </div>  
+                           
+                            </div>  
+                        <!-- EDITOR'S PICK -->
+                       
+                        <div class="row bg-white mx-1">
+                            <div class="col-12">
+                                <div class="card-title d-flex justify-content-center ml-4  ">
+                                    <img src="https://g.newsweek.com/www/images/logo-n1.svg" width="38"
+                                     class="bg-danger img-fluid"  alt="Screen Time Children"> 
+                                    <h4 class="px-2  font-weight-bold">EDITOR'S PICK</h4>
+                                  
+                                </div>
+                            </div>
+                                
+                            <div class="col-12 px-2 col-md-6 col-lg-3 mt-0">
+                                <hr class="my-1" >
+                                
+                                <div class="img-box position-relative">
+                        <img  class="img-fluid py-2" src="https://d.newsweek.com/en/full/1670998/anthony-fauci-covid-coronavirus-getty.jpg" alt="newspic">
+                        <span class="overlay-names font-weight-bold position-absolute pb-2 pt-1 px-2">U.S.</span>
+                        
+                    </div>
+                        <h2 class="h5  py-2 font-weight-bold">Black and Latino Groups Eye Georgia Senate Runoffs Needing a Sweep
+                        </h2>
+                        <p class="p">The balance of power in the Senate—and level of effectiveness of Joe Biden's incoming administration—hangs in the balance with dual Senate runoffs in Georgia, and Black and Latino groups are mobilizing to try to win two seats in an incredibly challenging political environment.</p>
+                                </div>
+        
+                                <div class="col-12 px-2 col-md-6  col-lg-3">
+
+                                    
+                        <hr class="my-1">
+                        <div class="img-box position-relative">
+
+                        <img  class="img-fluid py-2" src="https://d.newsweek.com/en/full/1670998/anthony-fauci-covid-coronavirus-getty.jpg" alt="newspic">
+                        <span class="overlay-names font-weight-bold position-absolute pb-2 pt-1 px-2">WORLD</span>
+
+                        </div>
+                        <h2 class="h5  py-2 font-weight-bold">Black and Latino Groups Eye Georgia Senate Runoffs Needing a Sweep
+                        </h2>
+                        <p class="p">The balance of power in the Senate—and level of effectiveness of Joe Biden's incoming administration—hangs in the balance with dual Senate runoffs in Georgia, and Black and Latino groups are mobilizing to try to win two seats in an incredibly challenging political environment.</p>
+                                </div>
+        
+                                <div class="col-12 px-2 col-md-6  col-lg-3">
+
+                                    
+                        <hr class="my-1">
+                         <div class="img-box position-relative">
+
+                        <img  class="img-fluid py-2" src="https://d.newsweek.com/en/full/1670998/anthony-fauci-covid-coronavirus-getty.jpg" alt="newspic">
+                        <span class="overlay-names font-weight-bold position-absolute pb-2 pt-1 px-2">POLITICS</span>
+                        </div>
+                        <h2 class="h5  py-2 font-weight-bold">Black and Latino Groups Eye Georgia Senate Runoffs Needing a Sweep
+                        </h2>
+                        <p class="p">The balance of power in the Senate—and level of effectiveness of Joe Biden's incoming administration—hangs in the balance with dual Senate runoffs in Georgia, and Black and Latino groups are mobilizing to try to win two seats in an incredibly challenging political environment.</p>
+                                </div>
+        
+                                <div class="col-12 px-2 col-md-6  col-lg-3">
+
+                                    
+                        <hr class="my-1">
+                         <div class="img-box position-relative">
+                        <img  class="img-fluid py-2" src="https://d.newsweek.com/en/full/1670998/anthony-fauci-covid-coronavirus-getty.jpg" alt="newspic">
+                        <span class="overlay-names font-weight-bold position-absolute pb-2 pt-1 px-2">BUSSINESS</span>
+                    </div>
+                        <h2 class="h5  py-2 font-weight-bold">Black and Latino Groups Eye Georgia Senate Runoffs Needing a Sweep
+                        </h2>
+                        <p class="p">The balance of power in the Senate—and level of effectiveness of Joe Biden's incoming administration—hangs in the balance with dual Senate runoffs in Georgia, and Black and Latino groups are mobilizing to try to win two seats in an incredibly challenging political environment.</p>
+                                </div>
+        
+                                <div class="col-12 px-2 col-md-6  col-lg-3">
+
+                                    
+                        <hr class="my-1">
+                         <div class="img-box position-relative">
+                        <img  class="img-fluid py-2" src="https://d.newsweek.com/en/full/1670998/anthony-fauci-covid-coronavirus-getty.jpg" alt="newspic">
+                        <span class="overlay-names font-weight-bold position-absolute pb-2 pt-1 px-2">TECH & SCIENCE</span>
+                    </div>
+                        <h2 class="h5  py-2 font-weight-bold">Black and Latino Groups Eye Georgia Senate Runoffs Needing a Sweep
+                        </h2>
+                        <p class="p">The balance of power in the Senate—and level of effectiveness of Joe Biden's incoming administration—hangs in the balance with dual Senate runoffs in Georgia, and Black and Latino groups are mobilizing to try to win two seats in an incredibly challenging political environment.</p>
+                                </div>
+        
+                                <div class="col-12 px-2 col-md-6  col-lg-3">
+
+                                    
+                        <hr class="my-1">
+                         <div class="img-box position-relative">
+                        <img  class="img-fluid py-2" src="https://d.newsweek.com/en/full/1670998/anthony-fauci-covid-coronavirus-getty.jpg" alt="newspic">
+                        <span class="overlay-names font-weight-bold position-absolute pb-2 pt-1 px-2">SPORTS</span>
+                    </div>
+                        <h2 class="h5  py-2 font-weight-bold">Black and Latino Groups Eye Georgia Senate Runoffs Needing a Sweep
+                        </h2>
+                        <p class="p">The balance of power in the Senate—and level of effectiveness of Joe Biden's incoming administration—hangs in the balance with dual Senate runoffs in Georgia, and Black and Latino groups are mobilizing to try to win two seats in an incredibly challenging political environment.</p>
+                                </div>
+        
+                                <div class="col-12 px-2 col-md-6  col-lg-3">
+
+                                    
+                        <hr class="my-1">
+                         <div class="img-box position-relative">
+                        <img  class="img-fluid py-2" src="https://d.newsweek.com/en/full/1670998/anthony-fauci-covid-coronavirus-getty.jpg" alt="newspic">
+                        <span class="overlay-names font-weight-bold position-absolute pb-2 pt-1 px-2">HEALTH</span>
+                    </div>
+                        <h2 class="h5  py-2 font-weight-bold">Black and Latino Groups Eye Georgia Senate Runoffs Needing a Sweep
+                        </h2>
+                        <p class="p">The balance of power in the Senate—and level of effectiveness of Joe Biden's incoming administration—hangs in the balance with dual Senate runoffs in Georgia, and Black and Latino groups are mobilizing to try to win two seats in an incredibly challenging political environment.</p>
+                                </div>
+        
+                                <div class="col-12 px-2 col-md-6  col-lg-3">
+
+                                    
+                        <hr class="my-1">
+                         <div class="img-box position-relative">
+                        <img  class="img-fluid py-2" src="https://d.newsweek.com/en/full/1670998/anthony-fauci-covid-coronavirus-getty.jpg" alt="news pic">
+                        <span class="overlay-names font-weight-bold position-absolute pb-2 pt-1 px-2">THE DEBATE</span>
+                    </div>
+                        <h2 class="h5  py-2 font-weight-bold">Black and Latino Groups Eye Georgia Senate Runoffs Needing a Sweep
+                        </h2>
+                        <p class="p">The balance of power in the Senate—and level of effectiveness of Joe Biden's incoming administration—hangs in the balance with dual Senate runoffs in Georgia, and Black and Latino groups are mobilizing to try to win two seats in an incredibly challenging political environment.</p>
+                                </div>
+                </div>
+                 
+                <!-- SUSCRIBE -->
+                <div class="row bg-white d-flex">
+                    <div class="col-12 p-1 col-lg-7">
+                        <a href="#"><h4 class="text-danger mx-3 font-weight-bold">SUSCRIBE</h4>
+                        </a>
+                        <div class="col-12 mb-4 suscribe-form">
+                        <div class="card bg-lightgrey border-0 align-items-center d-md-flex flex-md-row  suscribe-form">
+                            <div class="col-md-4  "></div>
+                            <img class="card-img-top w-25  position-absolute mh-2" src="https://d.newsweek.com/en/full/1658908/cover-november-06-11-2020.jpg" alt="newspic">
+                            <img class="card-img-top w-25 ml-5 position-absolute mt-3" src="https://d.newsweek.com/en/full/1668137/cover-november-20-2020.jpg" alt="newspic">
+                              <div class=" card-body d-flex flex-column align-items-center align-items-lg-start col-md-8 pt-0 suscribe-body">
+                                  <div class="class-title">  <h2 class="h4 mx-lg-0 font-weight-bold text-center text-lg-left">In-depth Stories You Don't See Elsewhere About Topics You Want to Read!
+                                </h2></div>
+                              <p class="h6 card-text text-center mx-lg-0 text-lg-left">All Access + Weekly Delivery.
+                                Choose A Membership That's Perfect for You!</p>
+                              <a href="#" class="btn btn-danger text-white font-weight-bold mt-3 p-2 px-3 h5">SUSCRIBE></a></div></div>
+                            </div>
+                          </div>
+<!-- NEWSLETTER -->         
+                          <div class="col-12 p-1 col-lg-5 ">
+                            <a href="#"><h4 class="text-danger mx-3 font-weight-bold">NEWSLETTER</h4>
+                            </a>
+                            <div class="col-12 mb-4 d-md-flex ">
+                            <div class="card bg-lightgrey d-md-flex flex-md-row col-lg-6 px-0 justify-content-start newsletter">
+                                <img class="img-fluid d-md-flex flex-md-column " src="https://d.newsweek.com/en/full/1541302/starting5-homepage.png" alt="newspic">
+                                  <div class="card-body border-top border-right border-bottom d-flex flex-column align-items-center align-items-lg-start ">
+                                        <div class="class-title">  <h2 class="h4 font-weight-bold text-center text-lg-left mt-3">THE STARTING 5</h2></div>
+                                  <p class="h6 card-text text-center text-lg-left mt-2">All Access + Weekly Delivery.
+                                    Choose A Membership That's Perfect for You!</p>
+    
+                                    <form class="form-inline w-100 d-lg-flex justify-content-center flex-lg-row flex-wrap w-auto form-news" action="/action_page.php">
+                                        <input type="email" class="form-control form-news" placeholder="Email address" id="email">
+                                        <button type="submit" class="btn btn-danger  text-white  mt-2 px-3 h5 newsletter text-nowrap w-auto form-news">FREE SIGN UP></button> </form></div></div>
+        
+                                    </div></div></div>
+<!-- footer -->
+
+                                    <footer class="footer navbar justify-content-start justify-content-lg-between ">
+                                    <div class="row">
+                                        <div class="col-12 p-1 d-flex flex-column pl-3 flex-lg-row">
+                                            <a href="#" class="navbar-brand text-danger">
+                                                <img src="img/newsweek.png" width="250" alt="">
+                                            </a>
+                                            <p class="p mt-auto text-secondary">2020 NEWSWEEK DIGITAL LLC</p>
+                                        </div>        </div>
+                                        <div class="row col-12 col-lg-3 ">
+                                            <div class="icons  d-flex text-secondary ">
+                                                <i class="fab fa-facebook-square px-2 fa-2x"></i>
+                                                <i class="fab fa-twitter px-2 fa-2x"></i>
+                                                <i class="fab fa-instagram px-2 fa-2x"></i>
+                                                <i class="fab fa-tumblr px-2 fa-2x"></i>
+                                                <i class="fab fa-linkedin px-2 fa-2x"></i>
+                                            </div>
+                                        </div>
+                            
+                                    
+                                    <div class="row border-top mt-2 pt-2">
+                                        <div class="col p-1">
+                                            <ul class="p text-secondary list-unstyled d-flex flex-row flex-wrap ">
+                                                <li><strong>Editions:</strong></li>
+                                                <li>U.S. Edition</li>
+                                                    <li>日本</li>
+                                                    <li>Pakistan</li>
+                                                    <li>Polska</li>
+                                                    <li> România</li>
+                                                    <li>About Us</li>
+                                                    <li>Corrections</li>
+                                                    <li>Contact Us</li>
+                                                    <li>Editorial Guidelines</li>
+                                                    <li> Advertise</li>
+                                                    <li> Copyright</li>
+                                                    <li>Terms & Conditions</li>
+                                                    <li>Privacy Policy</li>
+                                                    <li>Cookie Policy</li>
+                                                    <li>Terms of Sale</li>
+                                                    <li>Archive</li>
+                                                    <li>Announcements</li>
+                                            </ul>
+                                        </div></div>    
+                                </footer>
+                          </div>
+                   
+   
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
