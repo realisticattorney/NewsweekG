@@ -82,7 +82,7 @@ p {
 }
 
 .suscribe-body {
-  margin-top: 15rem ;
+  margin-top: 15rem;
 }
 
 .icons {
@@ -104,14 +104,19 @@ p {
   filter: brightness(999);
 }
 
+.newsletter img {
+  height: 170px;
+  object-fit: cover;
+}
+
 @media screen and (min-width: 768px) {
   .suscribe-body {
     margin-top: 5rem;
   }
 
   .newsletter img {
-    height: 250px;
     width: 50%;
+    min-height: 240px;
   }
 }
 
@@ -123,12 +128,17 @@ p {
   }
 
   .newsletter {
-    width: 100% ;
+    width: 100%;
   }
 
-  .newsletter img {
-    height: auto;
+  .newsletter img,
+  .suscribe-form {
+    min-height: 275px;
     width: auto;
+  }
+
+  .suscribe-body {
+    margin-top: 3.2rem;
   }
 }
 
